@@ -1,0 +1,3058 @@
+[
+  {
+    "id": "plant_tree_care",
+    "carbon": 0,
+    "keywords": [
+      "plant",
+      "tree",
+      "garden",
+      "seed",
+      "tanam",
+      "pohon",
+      "kebun"
+    ],
+    "title": {
+      "en": "Green space and biodiversity initiative",
+      "id": "Inisiatif ruang hijau dan biodiversitas"
+    },
+    "summary": {
+      "en": "Your custom action is related to planting or caring for green spaces. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan menanam atau merawat ruang hijau. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "single_use_plastic",
+    "carbon": 0,
+    "keywords": [
+      "plastic",
+      "bottle",
+      "bag",
+      "straw",
+      "plastik",
+      "botol",
+      "kantong",
+      "sedotan"
+    ],
+    "title": {
+      "en": "Single-use plastic reduction",
+      "id": "Pengurangan plastik sekali pakai"
+    },
+    "summary": {
+      "en": "Your custom action is related to reducing disposable plastic waste. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan mengurangi sampah plastik sekali pakai. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "water_saving",
+    "carbon": 0,
+    "keywords": [
+      "water",
+      "tap",
+      "shower",
+      "rain",
+      "air",
+      "keran",
+      "mandi",
+      "hujan"
+    ],
+    "title": {
+      "en": "Water conservation behavior",
+      "id": "Perilaku hemat air"
+    },
+    "summary": {
+      "en": "Your custom action is related to saving water in daily routines. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan menghemat air dalam rutinitas harian. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "energy_efficiency",
+    "carbon": 0,
+    "keywords": [
+      "energy",
+      "lamp",
+      "light",
+      "electric",
+      "ac",
+      "fan",
+      "listrik",
+      "energi",
+      "kipas"
+    ],
+    "title": {
+      "en": "Energy efficiency action",
+      "id": "Aksi efisiensi energi"
+    },
+    "summary": {
+      "en": "Your custom action is related to reducing electricity use. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan mengurangi penggunaan listrik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "low_carbon_transport",
+    "carbon": 0,
+    "keywords": [
+      "bike",
+      "walk",
+      "carpool",
+      "bus",
+      "transport",
+      "sepeda",
+      "jalan",
+      "angkutan"
+    ],
+    "title": {
+      "en": "Low-carbon mobility choice",
+      "id": "Pilihan mobilitas rendah karbon"
+    },
+    "summary": {
+      "en": "Your custom action is related to choosing cleaner transportation. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan memilih transportasi yang lebih bersih. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "food_waste",
+    "carbon": 0,
+    "keywords": [
+      "food",
+      "lunch",
+      "leftover",
+      "compost",
+      "makan",
+      "bekal",
+      "sisa",
+      "kompos"
+    ],
+    "title": {
+      "en": "Food waste and consumption awareness",
+      "id": "Kesadaran konsumsi dan sampah makanan"
+    },
+    "summary": {
+      "en": "Your custom action is related to reducing food waste and packaging impact. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan mengurangi sampah makanan dan dampak kemasan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "waste_sorting",
+    "carbon": 0,
+    "keywords": [
+      "pilah sampah",
+      "sort waste",
+      "organic",
+      "anorganic"
+    ],
+    "title": {
+      "en": "Waste sorting habit",
+      "id": "Kebiasaan memilah sampah"
+    },
+    "summary": {
+      "en": "Your custom action is related to waste sorting habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan memilah sampah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "recycling",
+    "carbon": 0,
+    "keywords": [
+      "recycle",
+      "daur ulang",
+      "barang bekas"
+    ],
+    "title": {
+      "en": "Recycling initiative",
+      "id": "Inisiatif daur ulang"
+    },
+    "summary": {
+      "en": "Your custom action is related to recycling initiative. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan inisiatif daur ulang. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "upcycling",
+    "carbon": 0,
+    "keywords": [
+      "upcycle",
+      "kerajinan bekas",
+      "reuse craft"
+    ],
+    "title": {
+      "en": "Creative upcycling action",
+      "id": "Aksi upcycling kreatif"
+    },
+    "summary": {
+      "en": "Your custom action is related to creative upcycling action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi upcycling kreatif. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "bring_tumbler",
+    "carbon": 0,
+    "keywords": [
+      "tumbler",
+      "botol minum",
+      "reusable bottle"
+    ],
+    "title": {
+      "en": "Reusable bottle habit",
+      "id": "Kebiasaan membawa botol pakai ulang"
+    },
+    "summary": {
+      "en": "Your custom action is related to reusable bottle habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan membawa botol pakai ulang. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "reusable_bag",
+    "carbon": 0,
+    "keywords": [
+      "totebag",
+      "tas belanja",
+      "reusable bag"
+    ],
+    "title": {
+      "en": "Reusable shopping bag habit",
+      "id": "Kebiasaan memakai tas belanja pakai ulang"
+    },
+    "summary": {
+      "en": "Your custom action is related to reusable shopping bag habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan memakai tas belanja pakai ulang. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "no_straw",
+    "carbon": 0,
+    "keywords": [
+      "no straw",
+      "tanpa sedotan"
+    ],
+    "title": {
+      "en": "Plastic straw avoidance",
+      "id": "Menghindari sedotan plastik"
+    },
+    "summary": {
+      "en": "Your custom action is related to plastic straw avoidance. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan menghindari sedotan plastik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "home_cooking",
+    "carbon": 0,
+    "keywords": [
+      "masak sendiri",
+      "homemade"
+    ],
+    "title": {
+      "en": "Home-cooked meal choice",
+      "id": "Pilihan makanan masak sendiri"
+    },
+    "summary": {
+      "en": "Your custom action is related to home-cooked meal choice. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pilihan makanan masak sendiri. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "meal_planning",
+    "carbon": 0,
+    "keywords": [
+      "meal plan",
+      "rencana makan"
+    ],
+    "title": {
+      "en": "Meal planning behavior",
+      "id": "Perilaku merencanakan makanan"
+    },
+    "summary": {
+      "en": "Your custom action is related to meal planning behavior. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perilaku merencanakan makanan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "finished_food",
+    "carbon": 0,
+    "keywords": [
+      "habiskan makanan",
+      "no leftover"
+    ],
+    "title": {
+      "en": "No-food-waste action",
+      "id": "Aksi tanpa sisa makanan"
+    },
+    "summary": {
+      "en": "Your custom action is related to no-food-waste action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi tanpa sisa makanan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "composting",
+    "carbon": 0,
+    "keywords": [
+      "compost",
+      "kompos",
+      "pupuk organik"
+    ],
+    "title": {
+      "en": "Composting organic waste",
+      "id": "Mengomposkan sampah organik"
+    },
+    "summary": {
+      "en": "Your custom action is related to composting organic waste. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan mengomposkan sampah organik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "ecobrick",
+    "carbon": 0,
+    "keywords": [
+      "ecobrick",
+      "bata plastik"
+    ],
+    "title": {
+      "en": "Ecobrick creation",
+      "id": "Pembuatan ecobrick"
+    },
+    "summary": {
+      "en": "Your custom action is related to ecobrick creation. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pembuatan ecobrick. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "paper_reduction",
+    "carbon": 0,
+    "keywords": [
+      "paper",
+      "kertas",
+      "print",
+      "cetak"
+    ],
+    "title": {
+      "en": "Paper reduction initiative",
+      "id": "Inisiatif pengurangan kertas"
+    },
+    "summary": {
+      "en": "Your custom action is related to paper reduction initiative. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan inisiatif pengurangan kertas. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "digital_notes",
+    "carbon": 0,
+    "keywords": [
+      "paperless",
+      "catatan digital",
+      "ebook"
+    ],
+    "title": {
+      "en": "Paperless learning habit",
+      "id": "Kebiasaan belajar tanpa kertas"
+    },
+    "summary": {
+      "en": "Your custom action is related to paperless learning habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan belajar tanpa kertas. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "repair_items",
+    "carbon": 0,
+    "keywords": [
+      "repair",
+      "perbaiki",
+      "servis"
+    ],
+    "title": {
+      "en": "Repair before replacing",
+      "id": "Memperbaiki sebelum mengganti"
+    },
+    "summary": {
+      "en": "Your custom action is related to repair before replacing. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan memperbaiki sebelum mengganti. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "secondhand",
+    "carbon": 0,
+    "keywords": [
+      "secondhand",
+      "thrift",
+      "preloved",
+      "bekas"
+    ],
+    "title": {
+      "en": "Secondhand product choice",
+      "id": "Pilihan produk bekas layak pakai"
+    },
+    "summary": {
+      "en": "Your custom action is related to secondhand product choice. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pilihan produk bekas layak pakai. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "donation",
+    "carbon": 0,
+    "keywords": [
+      "donasi",
+      "donate",
+      "sumbang"
+    ],
+    "title": {
+      "en": "Item donation for reuse",
+      "id": "Donasi barang untuk digunakan ulang"
+    },
+    "summary": {
+      "en": "Your custom action is related to item donation for reuse. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan donasi barang untuk digunakan ulang. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "clothes_reuse",
+    "carbon": 0,
+    "keywords": [
+      "baju lama",
+      "reuse clothes"
+    ],
+    "title": {
+      "en": "Clothing reuse behavior",
+      "id": "Perilaku menggunakan ulang pakaian"
+    },
+    "summary": {
+      "en": "Your custom action is related to clothing reuse behavior. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perilaku menggunakan ulang pakaian. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "eco_laundry",
+    "carbon": 0,
+    "keywords": [
+      "laundry",
+      "cuci baju"
+    ],
+    "title": {
+      "en": "Efficient laundry habit",
+      "id": "Kebiasaan mencuci yang efisien"
+    },
+    "summary": {
+      "en": "Your custom action is related to efficient laundry habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan mencuci yang efisien. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "air_dry",
+    "carbon": 0,
+    "keywords": [
+      "jemur",
+      "air dry"
+    ],
+    "title": {
+      "en": "Natural clothes drying",
+      "id": "Menjemur pakaian secara alami"
+    },
+    "summary": {
+      "en": "Your custom action is related to natural clothes drying. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan menjemur pakaian secara alami. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "short_shower",
+    "carbon": 0,
+    "keywords": [
+      "mandi singkat",
+      "short shower"
+    ],
+    "title": {
+      "en": "Short shower habit",
+      "id": "Kebiasaan mandi singkat"
+    },
+    "summary": {
+      "en": "Your custom action is related to short shower habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan mandi singkat. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "turn_off_tap",
+    "carbon": 0,
+    "keywords": [
+      "tutup keran",
+      "turn off tap"
+    ],
+    "title": {
+      "en": "Tap-off water saving",
+      "id": "Hemat air dengan menutup keran"
+    },
+    "summary": {
+      "en": "Your custom action is related to tap-off water saving. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan hemat air dengan menutup keran. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "rainwater_harvesting",
+    "carbon": 0,
+    "keywords": [
+      "air hujan",
+      "rainwater"
+    ],
+    "title": {
+      "en": "Rainwater collection",
+      "id": "Penampungan air hujan"
+    },
+    "summary": {
+      "en": "Your custom action is related to rainwater collection. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan penampungan air hujan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "greywater_reuse",
+    "carbon": 0,
+    "keywords": [
+      "air bekas",
+      "greywater"
+    ],
+    "title": {
+      "en": "Greywater reuse",
+      "id": "Penggunaan ulang air bekas"
+    },
+    "summary": {
+      "en": "Your custom action is related to greywater reuse. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan penggunaan ulang air bekas. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "leak_fix",
+    "carbon": 0,
+    "keywords": [
+      "bocor",
+      "keran bocor"
+    ],
+    "title": {
+      "en": "Water leak repair",
+      "id": "Perbaikan kebocoran air"
+    },
+    "summary": {
+      "en": "Your custom action is related to water leak repair. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perbaikan kebocoran air. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "turn_off_lights",
+    "carbon": 0,
+    "keywords": [
+      "matikan lampu",
+      "turn off lights"
+    ],
+    "title": {
+      "en": "Turning off unused lights",
+      "id": "Mematikan lampu yang tidak dipakai"
+    },
+    "summary": {
+      "en": "Your custom action is related to turning off unused lights. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan mematikan lampu yang tidak dipakai. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "unplug_devices",
+    "carbon": 0,
+    "keywords": [
+      "cabut charger",
+      "unplug"
+    ],
+    "title": {
+      "en": "Unplugging idle devices",
+      "id": "Mencabut perangkat yang tidak digunakan"
+    },
+    "summary": {
+      "en": "Your custom action is related to unplugging idle devices. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan mencabut perangkat yang tidak digunakan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "natural_light",
+    "carbon": 0,
+    "keywords": [
+      "cahaya alami",
+      "sunlight"
+    ],
+    "title": {
+      "en": "Natural lighting use",
+      "id": "Penggunaan pencahayaan alami"
+    },
+    "summary": {
+      "en": "Your custom action is related to natural lighting use. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan penggunaan pencahayaan alami. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "natural_ventilation",
+    "carbon": 0,
+    "keywords": [
+      "ventilasi alami",
+      "open window"
+    ],
+    "title": {
+      "en": "Natural ventilation habit",
+      "id": "Kebiasaan ventilasi alami"
+    },
+    "summary": {
+      "en": "Your custom action is related to natural ventilation habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan ventilasi alami. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "ac_temperature",
+    "carbon": 0,
+    "keywords": [
+      "suhu ac",
+      "thermostat"
+    ],
+    "title": {
+      "en": "Efficient AC temperature setting",
+      "id": "Pengaturan suhu AC yang efisien"
+    },
+    "summary": {
+      "en": "Your custom action is related to efficient ac temperature setting. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengaturan suhu ac yang efisien. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "fan_instead_ac",
+    "carbon": 0,
+    "keywords": [
+      "kipas",
+      "fan instead ac"
+    ],
+    "title": {
+      "en": "Fan-first cooling habit",
+      "id": "Kebiasaan memakai kipas lebih dulu"
+    },
+    "summary": {
+      "en": "Your custom action is related to fan-first cooling habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan memakai kipas lebih dulu. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "stairs",
+    "carbon": 0,
+    "keywords": [
+      "tangga",
+      "no lift"
+    ],
+    "title": {
+      "en": "Choosing stairs over lift",
+      "id": "Memilih tangga daripada lift"
+    },
+    "summary": {
+      "en": "Your custom action is related to choosing stairs over lift. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan memilih tangga daripada lift. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "efficient_cooking",
+    "carbon": 0,
+    "keywords": [
+      "masak hemat",
+      "kompor hemat"
+    ],
+    "title": {
+      "en": "Efficient cooking practice",
+      "id": "Praktik memasak hemat energi"
+    },
+    "summary": {
+      "en": "Your custom action is related to efficient cooking practice. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan praktik memasak hemat energi. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "solar_energy",
+    "carbon": 0,
+    "keywords": [
+      "solar",
+      "panel surya"
+    ],
+    "title": {
+      "en": "Renewable energy support",
+      "id": "Dukungan energi terbarukan"
+    },
+    "summary": {
+      "en": "Your custom action is related to renewable energy support. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan dukungan energi terbarukan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "walking_short_trip",
+    "carbon": 0,
+    "keywords": [
+      "jalan kaki",
+      "walking"
+    ],
+    "title": {
+      "en": "Walking for short trips",
+      "id": "Berjalan kaki untuk perjalanan pendek"
+    },
+    "summary": {
+      "en": "Your custom action is related to walking for short trips. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan berjalan kaki untuk perjalanan pendek. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "cycling",
+    "carbon": 0,
+    "keywords": [
+      "sepeda",
+      "cycling"
+    ],
+    "title": {
+      "en": "Cycling mobility habit",
+      "id": "Kebiasaan mobilitas bersepeda"
+    },
+    "summary": {
+      "en": "Your custom action is related to cycling mobility habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan mobilitas bersepeda. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "public_transport",
+    "carbon": 0,
+    "keywords": [
+      "bus",
+      "angkutan umum",
+      "kereta"
+    ],
+    "title": {
+      "en": "Public transport choice",
+      "id": "Pilihan transportasi umum"
+    },
+    "summary": {
+      "en": "Your custom action is related to public transport choice. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pilihan transportasi umum. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "carpool",
+    "carbon": 0,
+    "keywords": [
+      "carpool",
+      "nebeng"
+    ],
+    "title": {
+      "en": "Shared ride behavior",
+      "id": "Perilaku berbagi kendaraan"
+    },
+    "summary": {
+      "en": "Your custom action is related to shared ride behavior. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perilaku berbagi kendaraan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "combine_trips",
+    "carbon": 0,
+    "keywords": [
+      "gabung perjalanan",
+      "combine trips"
+    ],
+    "title": {
+      "en": "Trip combining habit",
+      "id": "Kebiasaan menggabungkan perjalanan"
+    },
+    "summary": {
+      "en": "Your custom action is related to trip combining habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan menggabungkan perjalanan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "remote_meeting",
+    "carbon": 0,
+    "keywords": [
+      "meeting online",
+      "remote meeting"
+    ],
+    "title": {
+      "en": "Remote meeting choice",
+      "id": "Pilihan rapat jarak jauh"
+    },
+    "summary": {
+      "en": "Your custom action is related to remote meeting choice. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pilihan rapat jarak jauh. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "eco_driving",
+    "carbon": 0,
+    "keywords": [
+      "eco driving",
+      "mengemudi hemat"
+    ],
+    "title": {
+      "en": "Efficient driving behavior",
+      "id": "Perilaku berkendara efisien"
+    },
+    "summary": {
+      "en": "Your custom action is related to efficient driving behavior. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perilaku berkendara efisien. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "vehicle_maintenance",
+    "carbon": 0,
+    "keywords": [
+      "servis kendaraan",
+      "vehicle maintenance"
+    ],
+    "title": {
+      "en": "Vehicle maintenance for efficiency",
+      "id": "Perawatan kendaraan untuk efisiensi"
+    },
+    "summary": {
+      "en": "Your custom action is related to vehicle maintenance for efficiency. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perawatan kendaraan untuk efisiensi. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "electric_vehicle",
+    "carbon": 0,
+    "keywords": [
+      "kendaraan listrik",
+      "ev"
+    ],
+    "title": {
+      "en": "Electric mobility support",
+      "id": "Dukungan mobilitas listrik"
+    },
+    "summary": {
+      "en": "Your custom action is related to electric mobility support. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan dukungan mobilitas listrik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "community_cleanup",
+    "carbon": 0,
+    "keywords": [
+      "gotong royong",
+      "cleanup"
+    ],
+    "title": {
+      "en": "Community cleanup activity",
+      "id": "Aktivitas bersih lingkungan bersama"
+    },
+    "summary": {
+      "en": "Your custom action is related to community cleanup activity. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aktivitas bersih lingkungan bersama. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "river_cleanup",
+    "carbon": 0,
+    "keywords": [
+      "bersih sungai",
+      "river clean"
+    ],
+    "title": {
+      "en": "River cleanup support",
+      "id": "Dukungan kebersihan sungai"
+    },
+    "summary": {
+      "en": "Your custom action is related to river cleanup support. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan dukungan kebersihan sungai. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "beach_cleanup",
+    "carbon": 0,
+    "keywords": [
+      "bersih pantai",
+      "beach clean"
+    ],
+    "title": {
+      "en": "Beach cleanup support",
+      "id": "Dukungan kebersihan pantai"
+    },
+    "summary": {
+      "en": "Your custom action is related to beach cleanup support. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan dukungan kebersihan pantai. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "drain_cleaning",
+    "carbon": 0,
+    "keywords": [
+      "selokan",
+      "drain",
+      "saluran air"
+    ],
+    "title": {
+      "en": "Drainage cleanup action",
+      "id": "Aksi membersihkan saluran air"
+    },
+    "summary": {
+      "en": "Your custom action is related to drainage cleanup action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi membersihkan saluran air. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "litter_pickup",
+    "carbon": 0,
+    "keywords": [
+      "pungut sampah",
+      "pick up trash"
+    ],
+    "title": {
+      "en": "Litter pickup action",
+      "id": "Aksi memungut sampah"
+    },
+    "summary": {
+      "en": "Your custom action is related to litter pickup action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi memungut sampah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "no_littering",
+    "carbon": 0,
+    "keywords": [
+      "jangan nyampah",
+      "no litter"
+    ],
+    "title": {
+      "en": "Anti-littering commitment",
+      "id": "Komitmen tidak membuang sampah sembarangan"
+    },
+    "summary": {
+      "en": "Your custom action is related to anti-littering commitment. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan komitmen tidak membuang sampah sembarangan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "proper_bin_use",
+    "carbon": 0,
+    "keywords": [
+      "tempat sampah",
+      "trash bin"
+    ],
+    "title": {
+      "en": "Proper waste disposal",
+      "id": "Pembuangan sampah yang benar"
+    },
+    "summary": {
+      "en": "Your custom action is related to proper waste disposal. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pembuangan sampah yang benar. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "hazardous_waste",
+    "carbon": 0,
+    "keywords": [
+      "limbah B3",
+      "hazardous waste"
+    ],
+    "title": {
+      "en": "Hazardous waste responsibility",
+      "id": "Tanggung jawab limbah berbahaya"
+    },
+    "summary": {
+      "en": "Your custom action is related to hazardous waste responsibility. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan tanggung jawab limbah berbahaya. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "battery_disposal",
+    "carbon": 0,
+    "keywords": [
+      "baterai",
+      "battery"
+    ],
+    "title": {
+      "en": "Battery waste awareness",
+      "id": "Kesadaran limbah baterai"
+    },
+    "summary": {
+      "en": "Your custom action is related to battery waste awareness. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kesadaran limbah baterai. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "e_waste",
+    "carbon": 0,
+    "keywords": [
+      "limbah elektronik",
+      "ewaste"
+    ],
+    "title": {
+      "en": "Electronic waste management",
+      "id": "Pengelolaan limbah elektronik"
+    },
+    "summary": {
+      "en": "Your custom action is related to electronic waste management. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengelolaan limbah elektronik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "eco_purchasing",
+    "carbon": 0,
+    "keywords": [
+      "produk ramah lingkungan",
+      "eco product"
+    ],
+    "title": {
+      "en": "Eco-conscious purchasing",
+      "id": "Pembelian yang sadar lingkungan"
+    },
+    "summary": {
+      "en": "Your custom action is related to eco-conscious purchasing. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pembelian yang sadar lingkungan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "minimalism",
+    "carbon": 0,
+    "keywords": [
+      "minimalis",
+      "buy less"
+    ],
+    "title": {
+      "en": "Reduced consumption lifestyle",
+      "id": "Gaya hidup mengurangi konsumsi"
+    },
+    "summary": {
+      "en": "Your custom action is related to reduced consumption lifestyle. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan gaya hidup mengurangi konsumsi. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "bulk_refill",
+    "carbon": 0,
+    "keywords": [
+      "isi ulang",
+      "refill"
+    ],
+    "title": {
+      "en": "Low-packaging refill habit",
+      "id": "Kebiasaan isi ulang minim kemasan"
+    },
+    "summary": {
+      "en": "Your custom action is related to low-packaging refill habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan isi ulang minim kemasan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "local_products",
+    "carbon": 0,
+    "keywords": [
+      "produk lokal",
+      "local product"
+    ],
+    "title": {
+      "en": "Local product preference",
+      "id": "Preferensi produk lokal"
+    },
+    "summary": {
+      "en": "Your custom action is related to local product preference. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan preferensi produk lokal. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "seasonal_food",
+    "carbon": 0,
+    "keywords": [
+      "buah musim",
+      "seasonal food"
+    ],
+    "title": {
+      "en": "Seasonal food choice",
+      "id": "Pilihan makanan musiman"
+    },
+    "summary": {
+      "en": "Your custom action is related to seasonal food choice. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pilihan makanan musiman. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "plant_based_meal",
+    "carbon": 0,
+    "keywords": [
+      "plant based",
+      "nabati"
+    ],
+    "title": {
+      "en": "Plant-rich meal choice",
+      "id": "Pilihan makanan kaya nabati"
+    },
+    "summary": {
+      "en": "Your custom action is related to plant-rich meal choice. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pilihan makanan kaya nabati. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "meat_reduction",
+    "carbon": 0,
+    "keywords": [
+      "kurangi daging",
+      "less meat"
+    ],
+    "title": {
+      "en": "Meat consumption reduction",
+      "id": "Pengurangan konsumsi daging"
+    },
+    "summary": {
+      "en": "Your custom action is related to meat consumption reduction. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengurangan konsumsi daging. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "urban_gardening",
+    "carbon": 0,
+    "keywords": [
+      "hidroponik",
+      "urban garden"
+    ],
+    "title": {
+      "en": "Urban gardening action",
+      "id": "Aksi berkebun di lingkungan urban"
+    },
+    "summary": {
+      "en": "Your custom action is related to urban gardening action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi berkebun di lingkungan urban. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "seed_saving",
+    "carbon": 0,
+    "keywords": [
+      "simpan benih",
+      "seed saving"
+    ],
+    "title": {
+      "en": "Seed saving practice",
+      "id": "Praktik menyimpan benih"
+    },
+    "summary": {
+      "en": "Your custom action is related to seed saving practice. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan praktik menyimpan benih. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "native_plants",
+    "carbon": 0,
+    "keywords": [
+      "tanaman lokal",
+      "native plant"
+    ],
+    "title": {
+      "en": "Native plant care",
+      "id": "Perawatan tanaman lokal"
+    },
+    "summary": {
+      "en": "Your custom action is related to native plant care. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perawatan tanaman lokal. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "pollinator_garden",
+    "carbon": 0,
+    "keywords": [
+      "lebah",
+      "kupu-kupu",
+      "pollinator"
+    ],
+    "title": {
+      "en": "Pollinator-friendly gardening",
+      "id": "Berkebun ramah penyerbuk"
+    },
+    "summary": {
+      "en": "Your custom action is related to pollinator-friendly gardening. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan berkebun ramah penyerbuk. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "tree_watering",
+    "carbon": 0,
+    "keywords": [
+      "rawat pohon",
+      "sirami pohon"
+    ],
+    "title": {
+      "en": "Tree care and maintenance",
+      "id": "Perawatan pohon"
+    },
+    "summary": {
+      "en": "Your custom action is related to tree care and maintenance. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perawatan pohon. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "mulching",
+    "carbon": 0,
+    "keywords": [
+      "mulsa",
+      "mulch"
+    ],
+    "title": {
+      "en": "Soil moisture protection",
+      "id": "Perlindungan kelembapan tanah"
+    },
+    "summary": {
+      "en": "Your custom action is related to soil moisture protection. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perlindungan kelembapan tanah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "organic_fertilizer",
+    "carbon": 0,
+    "keywords": [
+      "pupuk organik",
+      "organic fertilizer"
+    ],
+    "title": {
+      "en": "Organic fertilizer use",
+      "id": "Penggunaan pupuk organik"
+    },
+    "summary": {
+      "en": "Your custom action is related to organic fertilizer use. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan penggunaan pupuk organik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "avoid_pesticide",
+    "carbon": 0,
+    "keywords": [
+      "tanpa pestisida",
+      "natural pesticide"
+    ],
+    "title": {
+      "en": "Reduced chemical pesticide use",
+      "id": "Pengurangan pestisida kimia"
+    },
+    "summary": {
+      "en": "Your custom action is related to reduced chemical pesticide use. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengurangan pestisida kimia. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "animal_care",
+    "carbon": 0,
+    "keywords": [
+      "rawat hewan",
+      "animal care"
+    ],
+    "title": {
+      "en": "Responsible animal care",
+      "id": "Perawatan hewan yang bertanggung jawab"
+    },
+    "summary": {
+      "en": "Your custom action is related to responsible animal care. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perawatan hewan yang bertanggung jawab. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "wildlife_protection",
+    "carbon": 0,
+    "keywords": [
+      "satwa",
+      "wildlife"
+    ],
+    "title": {
+      "en": "Wildlife protection awareness",
+      "id": "Kesadaran perlindungan satwa"
+    },
+    "summary": {
+      "en": "Your custom action is related to wildlife protection awareness. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kesadaran perlindungan satwa. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "environmental_education",
+    "carbon": 0,
+    "keywords": [
+      "edukasi",
+      "teach environment"
+    ],
+    "title": {
+      "en": "Environmental education action",
+      "id": "Aksi edukasi lingkungan"
+    },
+    "summary": {
+      "en": "Your custom action is related to environmental education action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi edukasi lingkungan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "eco_campaign",
+    "carbon": 0,
+    "keywords": [
+      "kampanye",
+      "poster lingkungan"
+    ],
+    "title": {
+      "en": "Environmental awareness campaign",
+      "id": "Kampanye kesadaran lingkungan"
+    },
+    "summary": {
+      "en": "Your custom action is related to environmental awareness campaign. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kampanye kesadaran lingkungan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "community_challenge",
+    "carbon": 0,
+    "keywords": [
+      "tantangan lingkungan",
+      "eco challenge"
+    ],
+    "title": {
+      "en": "Eco challenge participation",
+      "id": "Partisipasi tantangan lingkungan"
+    },
+    "summary": {
+      "en": "Your custom action is related to eco challenge participation. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan partisipasi tantangan lingkungan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "remind_others",
+    "carbon": 0,
+    "keywords": [
+      "ajak teman",
+      "remind others"
+    ],
+    "title": {
+      "en": "Encouraging others to act",
+      "id": "Mengajak orang lain beraksi"
+    },
+    "summary": {
+      "en": "Your custom action is related to encouraging others to act. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan mengajak orang lain beraksi. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "volunteer",
+    "carbon": 0,
+    "keywords": [
+      "relawan",
+      "volunteer"
+    ],
+    "title": {
+      "en": "Environmental volunteering",
+      "id": "Kerelawanan lingkungan"
+    },
+    "summary": {
+      "en": "Your custom action is related to environmental volunteering. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kerelawanan lingkungan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "school_project",
+    "carbon": 0,
+    "keywords": [
+      "proyek sekolah",
+      "school project"
+    ],
+    "title": {
+      "en": "School environmental project",
+      "id": "Proyek lingkungan sekolah"
+    },
+    "summary": {
+      "en": "Your custom action is related to school environmental project. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan proyek lingkungan sekolah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "office_green",
+    "carbon": 0,
+    "keywords": [
+      "kantor hijau",
+      "green office"
+    ],
+    "title": {
+      "en": "Green workplace habit",
+      "id": "Kebiasaan kantor hijau"
+    },
+    "summary": {
+      "en": "Your custom action is related to green workplace habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan kantor hijau. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "classroom_cleanliness",
+    "carbon": 0,
+    "keywords": [
+      "kelas bersih",
+      "clean classroom"
+    ],
+    "title": {
+      "en": "Clean classroom action",
+      "id": "Aksi menjaga kelas bersih"
+    },
+    "summary": {
+      "en": "Your custom action is related to clean classroom action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi menjaga kelas bersih. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "school_garden",
+    "carbon": 0,
+    "keywords": [
+      "kebun sekolah",
+      "school garden"
+    ],
+    "title": {
+      "en": "School garden initiative",
+      "id": "Inisiatif kebun sekolah"
+    },
+    "summary": {
+      "en": "Your custom action is related to school garden initiative. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan inisiatif kebun sekolah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "canteen_waste",
+    "carbon": 0,
+    "keywords": [
+      "kantin",
+      "canteen waste"
+    ],
+    "title": {
+      "en": "Canteen waste reduction",
+      "id": "Pengurangan sampah kantin"
+    },
+    "summary": {
+      "en": "Your custom action is related to canteen waste reduction. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengurangan sampah kantin. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "event_waste",
+    "carbon": 0,
+    "keywords": [
+      "acara minim sampah",
+      "zero waste event"
+    ],
+    "title": {
+      "en": "Low-waste event action",
+      "id": "Aksi acara minim sampah"
+    },
+    "summary": {
+      "en": "Your custom action is related to low-waste event action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi acara minim sampah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "reusable_cutlery",
+    "carbon": 0,
+    "keywords": [
+      "alat makan",
+      "cutlery"
+    ],
+    "title": {
+      "en": "Reusable cutlery habit",
+      "id": "Kebiasaan membawa alat makan pakai ulang"
+    },
+    "summary": {
+      "en": "Your custom action is related to reusable cutlery habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan membawa alat makan pakai ulang. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "lunch_box",
+    "carbon": 0,
+    "keywords": [
+      "kotak makan",
+      "lunch box"
+    ],
+    "title": {
+      "en": "Reusable food container habit",
+      "id": "Kebiasaan memakai wadah makan pakai ulang"
+    },
+    "summary": {
+      "en": "Your custom action is related to reusable food container habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan memakai wadah makan pakai ulang. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "refill_station",
+    "carbon": 0,
+    "keywords": [
+      "isi ulang air",
+      "refill station"
+    ],
+    "title": {
+      "en": "Water refill habit",
+      "id": "Kebiasaan isi ulang air minum"
+    },
+    "summary": {
+      "en": "Your custom action is related to water refill habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan isi ulang air minum. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "avoid_styrofoam",
+    "carbon": 0,
+    "keywords": [
+      "styrofoam",
+      "sterofoam"
+    ],
+    "title": {
+      "en": "Styrofoam avoidance",
+      "id": "Menghindari styrofoam"
+    },
+    "summary": {
+      "en": "Your custom action is related to styrofoam avoidance. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan menghindari styrofoam. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "reduce_packaging",
+    "carbon": 0,
+    "keywords": [
+      "minim kemasan",
+      "less packaging"
+    ],
+    "title": {
+      "en": "Packaging waste reduction",
+      "id": "Pengurangan sampah kemasan"
+    },
+    "summary": {
+      "en": "Your custom action is related to packaging waste reduction. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengurangan sampah kemasan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "soap_refill",
+    "carbon": 0,
+    "keywords": [
+      "isi ulang sabun",
+      "soap refill"
+    ],
+    "title": {
+      "en": "Household refill habit",
+      "id": "Kebiasaan isi ulang produk rumah tangga"
+    },
+    "summary": {
+      "en": "Your custom action is related to household refill habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan isi ulang produk rumah tangga. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "eco_cleaning",
+    "carbon": 0,
+    "keywords": [
+      "pembersih alami",
+      "eco cleaning"
+    ],
+    "title": {
+      "en": "Eco-friendly cleaning practice",
+      "id": "Praktik bersih-bersih ramah lingkungan"
+    },
+    "summary": {
+      "en": "Your custom action is related to eco-friendly cleaning practice. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan praktik bersih-bersih ramah lingkungan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "open_burning_avoid",
+    "carbon": 0,
+    "keywords": [
+      "bakar sampah",
+      "burn trash"
+    ],
+    "title": {
+      "en": "Avoiding trash burning",
+      "id": "Menghindari pembakaran sampah"
+    },
+    "summary": {
+      "en": "Your custom action is related to avoiding trash burning. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan menghindari pembakaran sampah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "air_quality_awareness",
+    "carbon": 0,
+    "keywords": [
+      "kualitas udara",
+      "air quality"
+    ],
+    "title": {
+      "en": "Air quality awareness",
+      "id": "Kesadaran kualitas udara"
+    },
+    "summary": {
+      "en": "Your custom action is related to air quality awareness. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kesadaran kualitas udara. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "indoor_plants",
+    "carbon": 0,
+    "keywords": [
+      "tanaman indoor",
+      "indoor plant"
+    ],
+    "title": {
+      "en": "Indoor plant care",
+      "id": "Perawatan tanaman indoor"
+    },
+    "summary": {
+      "en": "Your custom action is related to indoor plant care. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perawatan tanaman indoor. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "balcony_garden",
+    "carbon": 0,
+    "keywords": [
+      "kebun balkon",
+      "balcony garden"
+    ],
+    "title": {
+      "en": "Small-space gardening",
+      "id": "Berkebun di ruang kecil"
+    },
+    "summary": {
+      "en": "Your custom action is related to small-space gardening. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan berkebun di ruang kecil. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "flood_prevention",
+    "carbon": 0,
+    "keywords": [
+      "banjir",
+      "flood prevention"
+    ],
+    "title": {
+      "en": "Flood prevention support",
+      "id": "Dukungan pencegahan banjir"
+    },
+    "summary": {
+      "en": "Your custom action is related to flood prevention support. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan dukungan pencegahan banjir. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "biopore",
+    "carbon": 0,
+    "keywords": [
+      "biopori",
+      "biopore"
+    ],
+    "title": {
+      "en": "Biopore infiltration action",
+      "id": "Aksi lubang resapan biopori"
+    },
+    "summary": {
+      "en": "Your custom action is related to biopore infiltration action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi lubang resapan biopori. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "library_borrow",
+    "carbon": 0,
+    "keywords": [
+      "pinjam buku",
+      "library"
+    ],
+    "title": {
+      "en": "Borrowing instead of buying",
+      "id": "Meminjam daripada membeli"
+    },
+    "summary": {
+      "en": "Your custom action is related to borrowing instead of buying. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan meminjam daripada membeli. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "tool_sharing",
+    "carbon": 0,
+    "keywords": [
+      "pinjam alat",
+      "tool sharing"
+    ],
+    "title": {
+      "en": "Shared tool usage",
+      "id": "Penggunaan alat secara bersama"
+    },
+    "summary": {
+      "en": "Your custom action is related to shared tool usage. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan penggunaan alat secara bersama. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "food_sharing",
+    "carbon": 0,
+    "keywords": [
+      "berbagi makanan",
+      "food sharing"
+    ],
+    "title": {
+      "en": "Food sharing initiative",
+      "id": "Inisiatif berbagi makanan"
+    },
+    "summary": {
+      "en": "Your custom action is related to food sharing initiative. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan inisiatif berbagi makanan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "leftover_reuse",
+    "carbon": 0,
+    "keywords": [
+      "olah sisa",
+      "leftover recipe"
+    ],
+    "title": {
+      "en": "Leftover food reuse",
+      "id": "Pemanfaatan sisa makanan"
+    },
+    "summary": {
+      "en": "Your custom action is related to leftover food reuse. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pemanfaatan sisa makanan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "food_storage",
+    "carbon": 0,
+    "keywords": [
+      "simpan makanan",
+      "food storage"
+    ],
+    "title": {
+      "en": "Better food storage",
+      "id": "Penyimpanan makanan yang lebih baik"
+    },
+    "summary": {
+      "en": "Your custom action is related to better food storage. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan penyimpanan makanan yang lebih baik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "fridge_efficiency",
+    "carbon": 0,
+    "keywords": [
+      "kulkas",
+      "fridge"
+    ],
+    "title": {
+      "en": "Efficient refrigerator use",
+      "id": "Penggunaan kulkas yang efisien"
+    },
+    "summary": {
+      "en": "Your custom action is related to efficient refrigerator use. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan penggunaan kulkas yang efisien. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "freezer_meal",
+    "carbon": 0,
+    "keywords": [
+      "bekukan makanan",
+      "freezer meal"
+    ],
+    "title": {
+      "en": "Freezing food to prevent waste",
+      "id": "Membekukan makanan untuk mencegah sampah"
+    },
+    "summary": {
+      "en": "Your custom action is related to freezing food to prevent waste. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan membekukan makanan untuk mencegah sampah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "local_market",
+    "carbon": 0,
+    "keywords": [
+      "pasar lokal",
+      "traditional market"
+    ],
+    "title": {
+      "en": "Local market shopping",
+      "id": "Belanja di pasar lokal"
+    },
+    "summary": {
+      "en": "Your custom action is related to local market shopping. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan belanja di pasar lokal. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "reduce_online_shopping",
+    "carbon": 0,
+    "keywords": [
+      "kurangi belanja online",
+      "less online shopping"
+    ],
+    "title": {
+      "en": "Reduced delivery packaging",
+      "id": "Pengurangan kemasan pengiriman"
+    },
+    "summary": {
+      "en": "Your custom action is related to reduced delivery packaging. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengurangan kemasan pengiriman. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "package_reuse",
+    "carbon": 0,
+    "keywords": [
+      "pakai ulang kardus",
+      "reuse package"
+    ],
+    "title": {
+      "en": "Package reuse behavior",
+      "id": "Perilaku memakai ulang kemasan"
+    },
+    "summary": {
+      "en": "Your custom action is related to package reuse behavior. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perilaku memakai ulang kemasan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "cardboard_recycle",
+    "carbon": 0,
+    "keywords": [
+      "kardus",
+      "cardboard"
+    ],
+    "title": {
+      "en": "Cardboard recycling",
+      "id": "Daur ulang kardus"
+    },
+    "summary": {
+      "en": "Your custom action is related to cardboard recycling. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan daur ulang kardus. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "glass_recycle",
+    "carbon": 0,
+    "keywords": [
+      "kaca",
+      "toples",
+      "glass"
+    ],
+    "title": {
+      "en": "Glass reuse and recycling",
+      "id": "Penggunaan ulang dan daur ulang kaca"
+    },
+    "summary": {
+      "en": "Your custom action is related to glass reuse and recycling. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan penggunaan ulang dan daur ulang kaca. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "metal_recycle",
+    "carbon": 0,
+    "keywords": [
+      "kaleng",
+      "logam",
+      "metal"
+    ],
+    "title": {
+      "en": "Metal recycling action",
+      "id": "Aksi daur ulang logam"
+    },
+    "summary": {
+      "en": "Your custom action is related to metal recycling action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi daur ulang logam. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "textile_recycle",
+    "carbon": 0,
+    "keywords": [
+      "limbah kain",
+      "textile recycle"
+    ],
+    "title": {
+      "en": "Textile waste reduction",
+      "id": "Pengurangan limbah tekstil"
+    },
+    "summary": {
+      "en": "Your custom action is related to textile waste reduction. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengurangan limbah tekstil. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "water_filter",
+    "carbon": 0,
+    "keywords": [
+      "filter air",
+      "water filter"
+    ],
+    "title": {
+      "en": "Water filter use",
+      "id": "Penggunaan filter air"
+    },
+    "summary": {
+      "en": "Your custom action is related to water filter use. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan penggunaan filter air. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "eco_travel",
+    "carbon": 0,
+    "keywords": [
+      "wisata ramah lingkungan",
+      "eco travel"
+    ],
+    "title": {
+      "en": "Sustainable travel behavior",
+      "id": "Perilaku wisata berkelanjutan"
+    },
+    "summary": {
+      "en": "Your custom action is related to sustainable travel behavior. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perilaku wisata berkelanjutan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "hotel_towel_reuse",
+    "carbon": 0,
+    "keywords": [
+      "handuk hotel",
+      "reuse towel"
+    ],
+    "title": {
+      "en": "Hotel towel reuse",
+      "id": "Penggunaan ulang handuk hotel"
+    },
+    "summary": {
+      "en": "Your custom action is related to hotel towel reuse. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan penggunaan ulang handuk hotel. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "responsible_picnic",
+    "carbon": 0,
+    "keywords": [
+      "piknik",
+      "camping"
+    ],
+    "title": {
+      "en": "Responsible outdoor activity",
+      "id": "Aktivitas luar ruang yang bertanggung jawab"
+    },
+    "summary": {
+      "en": "Your custom action is related to responsible outdoor activity. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aktivitas luar ruang yang bertanggung jawab. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "green_team",
+    "carbon": 0,
+    "keywords": [
+      "tim hijau",
+      "eco club"
+    ],
+    "title": {
+      "en": "Green team participation",
+      "id": "Partisipasi tim hijau"
+    },
+    "summary": {
+      "en": "Your custom action is related to green team participation. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan partisipasi tim hijau. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "carbon_tracking",
+    "carbon": 0,
+    "keywords": [
+      "catat karbon",
+      "carbon tracking"
+    ],
+    "title": {
+      "en": "Carbon tracking habit",
+      "id": "Kebiasaan mencatat karbon"
+    },
+    "summary": {
+      "en": "Your custom action is related to carbon tracking habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan mencatat karbon. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "eco_journal",
+    "carbon": 0,
+    "keywords": [
+      "jurnal lingkungan",
+      "eco journal"
+    ],
+    "title": {
+      "en": "Environmental journaling",
+      "id": "Jurnal lingkungan"
+    },
+    "summary": {
+      "en": "Your custom action is related to environmental journaling. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan jurnal lingkungan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "sustainability_goal",
+    "carbon": 0,
+    "keywords": [
+      "target lingkungan",
+      "eco goal"
+    ],
+    "title": {
+      "en": "Personal sustainability goal",
+      "id": "Target keberlanjutan pribadi"
+    },
+    "summary": {
+      "en": "Your custom action is related to personal sustainability goal. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan target keberlanjutan pribadi. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "habit_streak",
+    "carbon": 0,
+    "keywords": [
+      "kebiasaan harian",
+      "streak"
+    ],
+    "title": {
+      "en": "Daily eco habit streak",
+      "id": "Rangkaian kebiasaan hijau harian"
+    },
+    "summary": {
+      "en": "Your custom action is related to daily eco habit streak. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan rangkaian kebiasaan hijau harian. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "data_collection",
+    "carbon": 0,
+    "keywords": [
+      "survei",
+      "collect data"
+    ],
+    "title": {
+      "en": "Environmental data collection",
+      "id": "Pengumpulan data lingkungan"
+    },
+    "summary": {
+      "en": "Your custom action is related to environmental data collection. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengumpulan data lingkungan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "water_quality_check",
+    "carbon": 0,
+    "keywords": [
+      "kualitas air",
+      "ph water"
+    ],
+    "title": {
+      "en": "Water quality awareness",
+      "id": "Kesadaran kualitas air"
+    },
+    "summary": {
+      "en": "Your custom action is related to water quality awareness. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kesadaran kualitas air. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "soil_health",
+    "carbon": 0,
+    "keywords": [
+      "tanah sehat",
+      "soil health"
+    ],
+    "title": {
+      "en": "Soil health awareness",
+      "id": "Kesadaran kesehatan tanah"
+    },
+    "summary": {
+      "en": "Your custom action is related to soil health awareness. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kesadaran kesehatan tanah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "biodiversity_observation",
+    "carbon": 0,
+    "keywords": [
+      "keanekaragaman",
+      "biodiversity"
+    ],
+    "title": {
+      "en": "Biodiversity observation",
+      "id": "Pengamatan biodiversitas"
+    },
+    "summary": {
+      "en": "Your custom action is related to biodiversity observation. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengamatan biodiversitas. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "tree_adoption",
+    "carbon": 0,
+    "keywords": [
+      "adopsi pohon",
+      "tree adoption"
+    ],
+    "title": {
+      "en": "Tree adoption action",
+      "id": "Aksi adopsi pohon"
+    },
+    "summary": {
+      "en": "Your custom action is related to tree adoption action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi adopsi pohon. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "park_care",
+    "carbon": 0,
+    "keywords": [
+      "taman umum",
+      "park care"
+    ],
+    "title": {
+      "en": "Public green space care",
+      "id": "Perawatan ruang hijau publik"
+    },
+    "summary": {
+      "en": "Your custom action is related to public green space care. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan perawatan ruang hijau publik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "mangrove",
+    "carbon": 0,
+    "keywords": [
+      "mangrove",
+      "bakau"
+    ],
+    "title": {
+      "en": "Mangrove conservation support",
+      "id": "Dukungan konservasi mangrove"
+    },
+    "summary": {
+      "en": "Your custom action is related to mangrove conservation support. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan dukungan konservasi mangrove. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "ocean_plastic",
+    "carbon": 0,
+    "keywords": [
+      "plastik laut",
+      "ocean plastic"
+    ],
+    "title": {
+      "en": "Marine plastic reduction",
+      "id": "Pengurangan plastik laut"
+    },
+    "summary": {
+      "en": "Your custom action is related to marine plastic reduction. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengurangan plastik laut. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "green_content",
+    "carbon": 0,
+    "keywords": [
+      "konten lingkungan",
+      "green content"
+    ],
+    "title": {
+      "en": "Environmental content creation",
+      "id": "Pembuatan konten lingkungan"
+    },
+    "summary": {
+      "en": "Your custom action is related to environmental content creation. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pembuatan konten lingkungan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "digital_cleanup",
+    "carbon": 0,
+    "keywords": [
+      "hapus email",
+      "digital cleanup"
+    ],
+    "title": {
+      "en": "Digital clutter reduction",
+      "id": "Pengurangan sampah digital"
+    },
+    "summary": {
+      "en": "Your custom action is related to digital clutter reduction. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengurangan sampah digital. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "screen_time_reduce",
+    "carbon": 0,
+    "keywords": [
+      "kurangi gadget",
+      "screen time"
+    ],
+    "title": {
+      "en": "Reduced screen time",
+      "id": "Pengurangan waktu layar"
+    },
+    "summary": {
+      "en": "Your custom action is related to reduced screen time. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengurangan waktu layar. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "led_lights",
+    "carbon": 0,
+    "keywords": [
+      "lampu led",
+      "led"
+    ],
+    "title": {
+      "en": "LED lighting use",
+      "id": "Penggunaan lampu LED"
+    },
+    "summary": {
+      "en": "Your custom action is related to led lighting use. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan penggunaan lampu led. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "washing_full_load",
+    "carbon": 0,
+    "keywords": [
+      "mesin cuci penuh",
+      "full load"
+    ],
+    "title": {
+      "en": "Full-load washing habit",
+      "id": "Kebiasaan mencuci saat muatan penuh"
+    },
+    "summary": {
+      "en": "Your custom action is related to full-load washing habit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan kebiasaan mencuci saat muatan penuh. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "cold_wash",
+    "carbon": 0,
+    "keywords": [
+      "cuci air dingin",
+      "cold wash"
+    ],
+    "title": {
+      "en": "Cold-water washing",
+      "id": "Mencuci dengan air dingin"
+    },
+    "summary": {
+      "en": "Your custom action is related to cold-water washing. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan mencuci dengan air dingin. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "dishwashing_efficiency",
+    "carbon": 0,
+    "keywords": [
+      "cuci piring",
+      "dishwashing"
+    ],
+    "title": {
+      "en": "Efficient dishwashing",
+      "id": "Mencuci piring secara efisien"
+    },
+    "summary": {
+      "en": "Your custom action is related to efficient dishwashing. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan mencuci piring secara efisien. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "vegetable_garden",
+    "carbon": 0,
+    "keywords": [
+      "tanam sayur",
+      "vegetable garden"
+    ],
+    "title": {
+      "en": "Home vegetable growing",
+      "id": "Menanam sayur di rumah"
+    },
+    "summary": {
+      "en": "Your custom action is related to home vegetable growing. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan menanam sayur di rumah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "herb_garden",
+    "carbon": 0,
+    "keywords": [
+      "tanaman herbal",
+      "herb garden"
+    ],
+    "title": {
+      "en": "Herb gardening",
+      "id": "Berkebun tanaman herbal"
+    },
+    "summary": {
+      "en": "Your custom action is related to herb gardening. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan berkebun tanaman herbal. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "azolla_cultivation",
+    "carbon": 0,
+    "keywords": [
+      "azolla",
+      "azola"
+    ],
+    "title": {
+      "en": "Azolla cultivation",
+      "id": "Budidaya azolla"
+    },
+    "summary": {
+      "en": "Your custom action is related to azolla cultivation. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan budidaya azolla. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "maggot_bsf",
+    "carbon": 0,
+    "keywords": [
+      "maggot",
+      "magot",
+      "bsf"
+    ],
+    "title": {
+      "en": "Organic waste bioconversion",
+      "id": "Biokonversi sampah organik"
+    },
+    "summary": {
+      "en": "Your custom action is related to organic waste bioconversion. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan biokonversi sampah organik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "livestock_waste",
+    "carbon": 0,
+    "keywords": [
+      "kotoran ternak",
+      "manure"
+    ],
+    "title": {
+      "en": "Livestock waste management",
+      "id": "Pengelolaan limbah ternak"
+    },
+    "summary": {
+      "en": "Your custom action is related to livestock waste management. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengelolaan limbah ternak. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "fishpond_water",
+    "carbon": 0,
+    "keywords": [
+      "kolam ikan",
+      "fish pond"
+    ],
+    "title": {
+      "en": "Fishpond water management",
+      "id": "Pengelolaan air kolam ikan"
+    },
+    "summary": {
+      "en": "Your custom action is related to fishpond water management. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan pengelolaan air kolam ikan. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "aquaponics",
+    "carbon": 0,
+    "keywords": [
+      "akuaponik",
+      "aquaponics"
+    ],
+    "title": {
+      "en": "Aquaponic system support",
+      "id": "Dukungan sistem akuaponik"
+    },
+    "summary": {
+      "en": "Your custom action is related to aquaponic system support. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan dukungan sistem akuaponik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "hydroponics",
+    "carbon": 0,
+    "keywords": [
+      "hidroponik",
+      "hydroponics"
+    ],
+    "title": {
+      "en": "Hydroponic growing activity",
+      "id": "Aktivitas menanam hidroponik"
+    },
+    "summary": {
+      "en": "Your custom action is related to hydroponic growing activity. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aktivitas menanam hidroponik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "community_garden",
+    "carbon": 0,
+    "keywords": [
+      "kebun komunitas",
+      "community garden"
+    ],
+    "title": {
+      "en": "Community garden initiative",
+      "id": "Inisiatif kebun komunitas"
+    },
+    "summary": {
+      "en": "Your custom action is related to community garden initiative. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan inisiatif kebun komunitas. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "seedling_nursery",
+    "carbon": 0,
+    "keywords": [
+      "semai",
+      "pembibitan"
+    ],
+    "title": {
+      "en": "Seedling preparation",
+      "id": "Persiapan bibit tanaman"
+    },
+    "summary": {
+      "en": "Your custom action is related to seedling preparation. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan persiapan bibit tanaman. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "zero_waste_day",
+    "carbon": 0,
+    "keywords": [
+      "hari tanpa sampah",
+      "zero waste day"
+    ],
+    "title": {
+      "en": "Zero-waste day challenge",
+      "id": "Tantangan hari tanpa sampah"
+    },
+    "summary": {
+      "en": "Your custom action is related to zero-waste day challenge. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan tantangan hari tanpa sampah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "plastic_audit",
+    "carbon": 0,
+    "keywords": [
+      "audit plastik",
+      "plastic audit"
+    ],
+    "title": {
+      "en": "Plastic use audit",
+      "id": "Audit penggunaan plastik"
+    },
+    "summary": {
+      "en": "Your custom action is related to plastic use audit. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan audit penggunaan plastik. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  },
+  {
+    "id": "waste_audit",
+    "carbon": 0,
+    "keywords": [
+      "audit sampah",
+      "waste audit"
+    ],
+    "title": {
+      "en": "Waste audit action",
+      "id": "Aksi audit sampah"
+    },
+    "summary": {
+      "en": "Your custom action is related to waste audit action. This action is recorded with neutral carbon value while still giving useful environmental feedback.",
+      "id": "Aktivitas kustom kamu berkaitan dengan aksi audit sampah. Aktivitas ini dicatat dengan nilai karbon netral namun tetap memberi feedback lingkungan yang berguna."
+    },
+    "recommendation": {
+      "en": "Make the action more measurable by adding frequency, quantity, location, or duration.",
+      "id": "Buat aktivitas ini lebih terukur dengan menambahkan frekuensi, jumlah, lokasi, atau durasi."
+    }
+  }
+]
