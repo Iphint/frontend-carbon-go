@@ -17,7 +17,7 @@ export default function Navbar() {
       <div className="nav-container">
         <NavLink to="/" className="logo">
           <span className="logo-icon">🌿✨</span>
-          <span>Carbon-Go</span>
+          <span>Carbon-GoGoGOGO</span>
         </NavLink>
         <div className="nav-links">
           {links.map((link) => (
