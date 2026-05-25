@@ -11,6 +11,13 @@ const rankMeta = {
   Hero: { icon: "🏆", index: 3, nextName: "MAX LEVEL" }
 };
 
+const rankTranslationKeys = {
+  Guest: "guestRank",
+  Explorer: "explorerRank",
+  Guardian: "guardianRank",
+  Hero: "heroRank"
+};
+
 export default function Progress() {
   const { user } = useAuth();
   const { language, t } = useLanguage();
@@ -45,10 +52,31 @@ export default function Progress() {
 
   const totalCarbon = Number(data.totalCarbon);
   const rank = { name: data.currentRank || "Guest", ...(rankMeta[data.currentRank] || rankMeta.Guest) };
-  const journeyWidth = Math.round((rank.index / 3) * 100);
   const completedBadges = data.badges.filter((badge) => Number(badge.is_completed) === 1);
   const completedMilestones = data.milestones.filter((milestone) => Number(milestone.is_completed) === 1);
   const questCount = Number(data.rankCounts?.questCount || 0);
+  const formatRankDate = (value) => new Date(value).toLocaleDateString(language === "id" ? "id-ID" : "en-US", {
+    day: "numeric",
+    month: "numeric",
+    year: "numeric"
+  });
+  const getRankLabel = (name) => t(rankTranslationKeys[name] || name);
+  const nextRankLabel = rank.name === "Hero" ? t("maxLevel") : getRankLabel(rank.nextName);
+  const nextRankTarget = Math.min(rank.index + 1, 3);
+  const rankProgress = rank.name === "Hero" ? 100 : Math.round((
+    Math.min(questCount, nextRankTarget) +
+    Math.min(completedBadges.length, nextRankTarget) +
+    Math.min(completedMilestones.length, nextRankTarget)
+  ) / (nextRankTarget * 3) * 100);
+  const activeQuests = (data.quests || []).slice(0, 4).map((quest) => {
+    const requirement = Number(quest.requirement_value || 0);
+    return {
+      ...quest,
+      requirement,
+      isUnlocked: Number(quest.is_completed) === 1 || totalCarbon >= requirement,
+      remaining: Math.max(0, requirement - totalCarbon)
+    };
+  });
 
   return (
     <main className="progress-page">
@@ -61,14 +89,16 @@ export default function Progress() {
 
         <section className="journey-section">
           <div className="rank-icon">{rank.icon}</div>
-          <div className="rank-name">{rank.name}</div>
-          <div className="rank-description">{rank.name === "Hero" ? t("maxLevel") : t("rankClimbHint")}</div>
-          {rank.name !== "Hero" && <div className="rank-next">🎯 {t("nextRank")}: {rank.nextName}</div>}
-          <div className="progress-track"><div className="progress-fill" style={{ width: `${journeyWidth}%` }} /></div>
-          <div className="journey-stats"><span>🌍 {t("journey")}</span><span>{Math.round(journeyWidth)}%</span></div>
-          <button className="rank-log-btn" onClick={() => setShowRankLog(true)}>{t("viewRankLog")}</button>
+          <div className="rank-name">{getRankLabel(rank.name)}</div>
+          <div className="rank-description">{rank.name === "Hero" ? t("maxLevel") : t("startEcoJourney")}</div>
+          {rank.name !== "Hero" && <div className="rank-next">🎯 {rankProgress}% {t("toReachRank")} {nextRankLabel}</div>}
+          <div className="progress-track"><div className="progress-fill" style={{ width: `${rankProgress}%` }} /></div>
+          <div className="journey-stats"><span>🌍 {t("journey")}</span><span>{rankProgress}%</span></div>
+          <div className="rank-action-row">
+            <button className="rank-log-btn" onClick={() => setShowRankLog(true)}>↻ {t("viewRankLog")}</button>
+          </div>
           <div className="rank-helper">
-            {t("questActivityLogsCount")}: {questCount} · {t("badgesEarnedCount")}: {completedBadges.length} · {t("milestonesCompletedCount")}: {completedMilestones.length}
+            ✪ {t("rankProgressHint")}
           </div>
         </section>
 
@@ -104,15 +134,15 @@ export default function Progress() {
         </div>
 
         <h2 className="section-title progress-section-title">📝 {t("activeQuests")} <span>{t("questHint")}</span></h2>
-        <div className="card-grid progress-card-grid">
-          {data.quests?.length ? data.quests.map((quest) => (
-            <article className={`card quest-card ${quest.is_completed ? "unlocked" : "locked"}`} key={quest.id}>
-              <div className="card-icon">{quest.is_completed ? quest.icon : "🔒"}</div>
+        <div className="card-grid progress-card-grid active-quest-grid">
+          {activeQuests.length ? activeQuests.map((quest) => (
+            <article className={`card quest-card ${quest.isUnlocked ? "unlocked" : "locked"}`} key={quest.id}>
+              <div className="card-icon">{quest.isUnlocked ? quest.icon : "🔒"}</div>
               <h3>{quest.name}</h3>
               <p>{quest.description}</p>
-              <p className="quest-reward">🎯 Reward: +{quest.reward} journey points</p>
-              <p className="quest-requires">💥 Requires: {quest.requirement_value} CU | You have: {totalCarbon} CU</p>
-              <span className="badge">{quest.is_completed ? "✅ Completed" : `🔒 Need ${Math.max(0, Number(quest.requirement_value) - totalCarbon)} CU`}</span>
+              <p className="quest-reward">🎯 {t("reward")}: +{quest.reward} journey points</p>
+              <p className="quest-requires">💥 {t("requires")}: {quest.requirement} CU | {t("youHave")}: {totalCarbon} CU</p>
+              <span className="badge">{quest.isUnlocked ? `✅ ${t("completed")}` : `🔒 ${t("need")} ${quest.remaining} CU`}</span>
             </article>
           )) : <EmptyState>{t("noActivities")}</EmptyState>}
         </div>
@@ -123,18 +153,21 @@ export default function Progress() {
         <div className="rank-log-modal">
           <div className="rank-log-content">
             <div className="rank-log-header">
-              <h3>{t("viewRankLog")}</h3>
-              <button className="rank-exit-btn" type="button" onClick={() => setShowRankLog(false)}>Exit</button>
+              <h3>🏆 {t("rankJourney")}</h3>
             </div>
-            {rankLog.length ? rankLog.map((item) => (
-              <div className="rank-entry" key={item.id}>
-                <div className="rank-entry-icon">{rankMeta[item.rank_name]?.icon || "🏅"}</div>
-                <div>
-                  <strong>{item.rank_name}</strong>
-                  <div className="rank-entry-date">{new Date(item.earned_at).toLocaleString()}</div>
+            <div className="rank-log-list">
+              {rankLog.length ? rankLog.map((item) => (
+                <div className="rank-entry" key={item.id}>
+                  <div className="rank-entry-icon">{rankMeta[item.rank_name]?.icon || "🏅"}</div>
+                  <div className="rank-entry-main">
+                    <strong>{getRankLabel(item.rank_name)}</strong>
+                    <div className="rank-entry-date">{t("achievedOn")} {formatRankDate(item.earned_at)}</div>
+                  </div>
+                  <span className="rank-entry-check" aria-hidden="true">✓</span>
                 </div>
-              </div>
-            )) : <EmptyState>No rank changes yet.</EmptyState>}
+              )) : <EmptyState>{t("noRankChanges")}</EmptyState>}
+            </div>
+            <button className="rank-exit-btn" type="button" onClick={() => setShowRankLog(false)}>{t("close")}</button>
           </div>
         </div>
       )}

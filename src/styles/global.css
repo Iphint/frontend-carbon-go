@@ -524,6 +524,13 @@ textarea {
   margin-bottom: 1rem;
 }
 
+.journey-section {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid rgba(218, 232, 207, 0.95);
+  box-shadow: 0 22px 46px rgba(95, 125, 78, 0.13);
+  padding: 1.8rem 2rem;
+}
+
 .accumulator-score,
 .carbon-score {
   font-size: 3rem;
@@ -920,6 +927,10 @@ textarea {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.active-quest-grid {
+  grid-template-columns: repeat(4, minmax(180px, 1fr));
+}
+
 .progress-card-grid .card {
   min-height: 154px;
   border-radius: 1.35rem;
@@ -940,6 +951,14 @@ textarea {
 
 .quest-card h3 {
   color: #17251b;
+}
+
+.quest-card.locked {
+  background: linear-gradient(145deg, #f6f7ef, #fff8ea);
+}
+
+.quest-card.unlocked {
+  background: linear-gradient(145deg, #f2fff1, #fffdf0);
 }
 
 .quest-reward,
@@ -964,49 +983,53 @@ textarea {
 }
 
 .rank-icon {
-  font-size: 4rem;
+  font-size: 3rem;
   background: linear-gradient(145deg, #b6e3b0, #f9dd9e);
-  width: 100px;
-  height: 100px;
+  width: 84px;
+  height: 84px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto 1rem;
+  margin: 0 auto 0.65rem;
+  box-shadow: 0 14px 28px rgba(76, 103, 63, 0.18);
 }
 
 .rank-name {
-  font-size: 2rem;
+  font-size: 1.75rem;
   font-weight: 800;
   color: #2b6e3c;
 }
 
 .rank-description {
   color: #6c7e6e;
-  margin-top: 0.3rem;
+  margin-top: 0.2rem;
+  font-size: 0.86rem;
 }
 
 .rank-next {
   color: #e5651a;
-  font-size: 0.85rem;
-  margin-top: 0.8rem;
+  font-size: 0.78rem;
+  margin-top: 0.35rem;
+  font-weight: 800;
 }
 
 .rank-helper {
-  margin-top: 1rem;
-  background: #e8f0e2;
+  margin-top: 1.05rem;
+  background: linear-gradient(90deg, #edf3e6, #f7f5e7);
   border-radius: 999px;
-  padding: 0.45rem 1rem;
-  font-size: 0.86rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.78rem;
   color: #17251b;
+  font-weight: 800;
 }
 
 .progress-track {
-  background: #e2e9db;
+  background: #dfe7da;
   border-radius: 40px;
-  height: 16px;
+  height: 15px;
   width: 100%;
-  margin: 1.5rem 0;
+  margin: 1.25rem 0 0.9rem;
   overflow: hidden;
 }
 
@@ -1020,8 +1043,16 @@ textarea {
 .journey-stats {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0;
+  align-items: center;
+  margin: 0.6rem 0 1.15rem;
   font-weight: 700;
+  color: #425446;
+  font-size: 0.82rem;
+}
+
+.rank-action-row {
+  display: flex;
+  justify-content: center;
 }
 
 .rank-log-btn,
@@ -1059,37 +1090,87 @@ textarea {
   overflow-y: auto;
 }
 
+.rank-log-modal {
+  background: rgba(30, 30, 30, 0.72);
+}
+
+.rank-log-content {
+  max-width: 480px;
+  border-radius: 1.6rem;
+  padding: 1.5rem 1.6rem 1.6rem;
+  color: #1c3427;
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.22);
+}
+
 .rank-log-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  margin-bottom: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.rank-log-header h3 {
+  color: #1c3427;
+  font-size: 1.08rem;
+  line-height: 1.2;
+}
+
+.rank-log-list {
+  display: grid;
+  gap: 0.75rem;
+  margin-bottom: 1.15rem;
 }
 
 .rank-exit-btn {
   border: 0;
   border-radius: 999px;
-  padding: 0.45rem 0.9rem;
-  background: #1a3e2c;
+  padding: 0.6rem 1rem;
+  background: #2f8a67;
   color: white;
   font-weight: 800;
+  width: 100%;
+  box-shadow: 0 8px 18px rgba(47, 138, 103, 0.18);
 }
 
 .rank-entry {
-  display: flex;
-  gap: 1rem;
-  padding: 0.8rem;
-  border-bottom: 1px solid #e2ecd9;
+  display: grid;
+  grid-template-columns: 44px 1fr 22px;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.25rem 0.15rem;
 }
 
 .rank-entry-icon {
-  font-size: 2rem;
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  font-size: 1.75rem;
+}
+
+.rank-entry-main strong {
+  display: block;
+  color: #1e2d24;
+  font-size: 0.95rem;
 }
 
 .rank-entry-date {
-  font-size: 0.8rem;
-  color: #6c7e6e;
+  font-size: 0.72rem;
+  color: #6c746c;
+  margin-top: 0.12rem;
+}
+
+.rank-entry-check {
+  width: 18px;
+  height: 18px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  background: #4caf50;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 900;
 }
 
 .confetti-layer {
@@ -1597,6 +1678,10 @@ textarea {
   }
 
   .progress-card-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .active-quest-grid {
     grid-template-columns: 1fr;
   }
 
