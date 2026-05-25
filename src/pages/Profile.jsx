@@ -211,6 +211,13 @@ export default function Profile() {
     bio: language === "id" ? "Bio" : "Bio",
     saveChanges: language === "id" ? "Simpan Perubahan" : "Save Changes"
   };
+  const genderOptions = [
+    { value: "female", label: t("female") },
+    { value: "male", label: t("male") },
+    { value: "other", label: t("otherGender") },
+    { value: "prefer_not_to_say", label: t("preferNotToSay") }
+  ];
+  const knownGender = genderOptions.some((option) => option.value === form?.gender);
 
   return (
     <main className="profile-page">
@@ -306,7 +313,15 @@ export default function Profile() {
             <h3>{profileCopy.editProfile}</h3>
             <label>{profileCopy.fullName}<input required value={form.full_name} onChange={(e) => setForm({ ...form, full_name: e.target.value })} /></label>
             <label>{profileCopy.address}<textarea required value={form.address} onChange={(e) => setForm({ ...form, address: e.target.value })} /></label>
-            <label>{profileCopy.gender}<input required value={form.gender} onChange={(e) => setForm({ ...form, gender: e.target.value })} /></label>
+            <label>{profileCopy.gender}
+              <select required value={form.gender} onChange={(e) => setForm({ ...form, gender: e.target.value })}>
+                <option value="">{t("selectGender")}</option>
+                {!knownGender && form.gender && <option value={form.gender}>{form.gender}</option>}
+                {genderOptions.map((option) => (
+                  <option key={option.value} value={option.value}>{option.label}</option>
+                ))}
+              </select>
+            </label>
             <label>{profileCopy.phone}<input required value={form.phone_number} onChange={(e) => setForm({ ...form, phone_number: e.target.value })} /></label>
             <label>{profileCopy.bio}<textarea value={form.bio} onChange={(e) => setForm({ ...form, bio: e.target.value })} /></label>
             <button className="btn-primary">{profileCopy.saveChanges}</button>

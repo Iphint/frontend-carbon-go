@@ -3,7 +3,8 @@ import { useNavigate } from "react-router-dom";
 import { api, getErrorMessage } from "../api/client";
 import EmptyState from "../components/EmptyState.jsx";
 import { useLanguage } from "../api/LanguageContext.jsx";
-import { withHomeFallback } from "../utils/activityFallbacks.js";
+import { useAuth } from "../api/AuthContext.jsx";
+import { markDailySurveyCompleted } from "../utils/surveyStatus.js";
 
 const categorySteps = [
   { id: "transportation", labelKey: "school", titleKey: "schoolTransportation", single: true },
@@ -20,6 +21,7 @@ function otherKey(category) {
 
 export default function SurveyLog() {
   const navigate = useNavigate();
+  const { user } = useAuth();
   const { language, t } = useLanguage();
   const [activities, setActivities] = useState([]);
   const [stepIndex, setStepIndex] = useState(0);
@@ -33,7 +35,7 @@ export default function SurveyLog() {
   useEffect(() => {
     setLoading(true);
     api.get(`/activities?lang=${language}`)
-      .then((res) => setActivities(withHomeFallback(res.data.activities)))
+      .then((res) => setActivities(res.data.activities))
       .catch((err) => setError(getErrorMessage(err)))
       .finally(() => setLoading(false));
   }, [language]);
@@ -93,6 +95,7 @@ export default function SurveyLog() {
     setSaving(true);
     try {
       await Promise.all(payloads.map((payload) => api.post("/activity-logs", payload)));
+      markDailySurveyCompleted(user.id);
       navigate("/tracker", { replace: true });
     } catch (err) {
       setError(getErrorMessage(err));

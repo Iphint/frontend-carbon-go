@@ -2,57 +2,22 @@ import { useEffect, useState } from "react";
 import { api, getErrorMessage } from "../api/client";
 import EmptyState from "../components/EmptyState.jsx";
 import { useLanguage } from "../api/LanguageContext.jsx";
+import { useAuth } from "../api/AuthContext.jsx";
 
-const activeQuests = [
-  {
-    icon: "🚶",
-    title: "🌱 First Green Step",
-    description: "Log your first eco-action",
-    requirement: 50,
-    reward: 25
-  },
-  {
-    icon: "💡",
-    title: "💡 Energy Saver",
-    description: "Save energy by turning off unused devices",
-    requirement: 150,
-    reward: 25
-  },
-  {
-    icon: "♻️",
-    title: "♻️ Plastic Free",
-    description: "Avoid single-use plastics consistently",
-    requirement: 300,
-    reward: 25
-  },
-  {
-    icon: "🌲",
-    title: "🌳 Tree Guardian",
-    description: "Support reforestation efforts",
-    requirement: 500,
-    reward: 25
-  }
-];
-
-const defaultBadges = [
-  { id: "default-green-thumb", name: "Green Thumb", description: "Earn 100 CU", icon: "🌿", requirement_value: 100 },
-  { id: "default-recycling-guru", name: "Recycling Guru", description: "Earn 250 CU", icon: "♻️", requirement_value: 250 },
-  { id: "default-earth-buddy", name: "Earth Buddy", description: "Earn 500 CU", icon: "🐼", requirement_value: 500 },
-  { id: "default-climate-hero", name: "Climate Hero", description: "Earn 1000 CU", icon: "⚡", requirement_value: 1000 }
-];
-
-function rankFor(total) {
-  if (total >= 1000) return { icon: "🏆", name: "Hero", nextName: "MAX LEVEL", nextTarget: 1000 };
-  if (total >= 500) return { icon: "🌳", name: "Guardian", nextName: "Hero", nextTarget: 1000 };
-  if (total >= 250) return { icon: "🌱", name: "Explorer", nextName: "Guardian", nextTarget: 500 };
-  return { icon: "👤", name: "Guest", nextName: "Explorer", nextTarget: 250 };
-}
+const rankMeta = {
+  Guest: { icon: "👤", index: 0, nextName: "Explorer" },
+  Explorer: { icon: "🌱", index: 1, nextName: "Guardian" },
+  Guardian: { icon: "🌳", index: 2, nextName: "Hero" },
+  Hero: { icon: "🏆", index: 3, nextName: "MAX LEVEL" }
+};
 
 export default function Progress() {
+  const { user } = useAuth();
   const { language, t } = useLanguage();
   const [data, setData] = useState(null);
   const [rankLog, setRankLog] = useState([]);
   const [showRankLog, setShowRankLog] = useState(false);
+  const [confettiRank, setConfettiRank] = useState("");
   const [error, setError] = useState("");
 
   useEffect(() => {
@@ -64,22 +29,26 @@ export default function Progress() {
       .catch((err) => setError(getErrorMessage(err)));
   }, [language]);
 
+  useEffect(() => {
+    if (!user?.id || !rankLog.length) return;
+    const latest = rankLog[rankLog.length - 1];
+    const seenKey = `carbon_user_${user.id}_seen_rank_${latest.id}`;
+    if (latest.rank_name !== "Guest" && localStorage.getItem(seenKey) !== "true") {
+      localStorage.setItem(seenKey, "true");
+      setConfettiRank(latest.rank_name);
+      window.setTimeout(() => setConfettiRank(""), 2800);
+    }
+  }, [user?.id, rankLog]);
+
   if (error) return <div className="form-error">{error}</div>;
   if (!data) return <div className="page-loader">Loading progress...</div>;
 
   const totalCarbon = Number(data.totalCarbon);
-  const rank = rankFor(totalCarbon);
-  const journeyWidth = Math.max(0, Math.min(100, (Math.max(totalCarbon, 0) / 1000) * 100));
-  const nextRankPercent = rank.nextTarget
-    ? Math.min(100, Math.round((Math.max(totalCarbon, 0) / rank.nextTarget) * 100))
-    : 100;
-  const todayCarbon = Number(data.todayCarbon || 0);
-  const journeyPoints = Number(data.journeyPoints);
-  const badges = data.badges.length ? data.badges : defaultBadges.map((badge) => ({
-    ...badge,
-    progress_value: totalCarbon,
-    is_completed: totalCarbon >= badge.requirement_value
-  }));
+  const rank = { name: data.currentRank || "Guest", ...(rankMeta[data.currentRank] || rankMeta.Guest) };
+  const journeyWidth = Math.round((rank.index / 3) * 100);
+  const completedBadges = data.badges.filter((badge) => Number(badge.is_completed) === 1);
+  const completedMilestones = data.milestones.filter((milestone) => Number(milestone.is_completed) === 1);
+  const questCount = Number(data.rankCounts?.questCount || 0);
 
   return (
     <main className="progress-page">
@@ -93,53 +62,59 @@ export default function Progress() {
         <section className="journey-section">
           <div className="rank-icon">{rank.icon}</div>
           <div className="rank-name">{rank.name}</div>
-          <div className="rank-description">{rank.name === "Hero" ? "MAX LEVEL" : "Start your eco-journey by earning Carbon Units!"}</div>
-          {rank.name !== "Hero" && <div className="rank-next">🎯 {nextRankPercent}% to reach {rank.nextName}</div>}
+          <div className="rank-description">{rank.name === "Hero" ? t("maxLevel") : t("rankClimbHint")}</div>
+          {rank.name !== "Hero" && <div className="rank-next">🎯 {t("nextRank")}: {rank.nextName}</div>}
           <div className="progress-track"><div className="progress-fill" style={{ width: `${journeyWidth}%` }} /></div>
           <div className="journey-stats"><span>🌍 {t("journey")}</span><span>{Math.round(journeyWidth)}%</span></div>
           <button className="rank-log-btn" onClick={() => setShowRankLog(true)}>{t("viewRankLog")}</button>
-          <div className="rank-helper">ⓘ Complete quests and earn Carbon Units to advance to the next rank!</div>
+          <div className="rank-helper">
+            {t("questActivityLogsCount")}: {questCount} · {t("badgesEarnedCount")}: {completedBadges.length} · {t("milestonesCompletedCount")}: {completedMilestones.length}
+          </div>
         </section>
+
+        {confettiRank && (
+          <div className="confetti-layer" aria-hidden="true">
+            {Array.from({ length: 36 }, (_, index) => <span key={index} style={{ "--i": index }} />)}
+            <strong>Rank Up: {confettiRank}</strong>
+          </div>
+        )}
 
         <h2 className="section-title progress-section-title">🏁 {t("milestones")} <span>→ {t("milestoneBasis")}</span></h2>
         <div className="card-grid progress-card-grid">
-          {data.milestones.map((item) => (
+          {data.milestones.length ? data.milestones.map((item) => (
             <article className={`card ${item.is_completed ? "unlocked" : "locked"}`} key={item.id}>
               <div className="card-icon">{item.is_completed ? "✅" : "🌱"}</div>
               <h3>{item.name}</h3>
               <p>{item.description.replace("Journey Points", "CU").replace("journey points", "CU")}</p>
               <span className="badge">{item.is_completed ? "✅ UNLOCKED" : `🔒 Need ${Math.max(0, Number(item.target_value) - totalCarbon)} CU`}</span>
             </article>
-          ))}
+          )) : <EmptyState>Empty achievements.</EmptyState>}
         </div>
 
         <h2 className="section-title progress-section-title">🏅 {t("badges")} <span>{t("badgeProof")}</span></h2>
         <div className="card-grid progress-card-grid">
-          {badges.map((badge) => (
+          {data.badges.length ? data.badges.map((badge) => (
             <article className={`card ${badge.is_completed ? "unlocked" : "locked"}`} key={badge.id}>
               <div className="card-icon">{badge.is_completed ? badge.icon : "🔒"}</div>
               <h3>{badge.name}</h3>
               <p>{badge.description.replace("Eco Points", "CU")}</p>
               <span className="badge">{badge.is_completed ? "🏅 EARNED" : `⌛ Need ${Math.max(0, Number(badge.requirement_value) - totalCarbon)} CU`}</span>
             </article>
-          ))}
+          )) : <EmptyState>{t("noBadges")}</EmptyState>}
         </div>
 
         <h2 className="section-title progress-section-title">📝 {t("activeQuests")} <span>{t("questHint")}</span></h2>
         <div className="card-grid progress-card-grid">
-          {activeQuests.map((quest) => {
-            const completed = todayCarbon >= quest.requirement;
-            return (
-              <article className={`card quest-card ${completed ? "unlocked" : "locked"}`} key={quest.title}>
-                <div className="card-icon">{quest.icon}</div>
-                <h3>{quest.title}</h3>
-                <p>{quest.description}</p>
-                <p className="quest-reward">🎯 Reward: +{quest.reward} journey points</p>
-                <p className="quest-requires">💥 Requires: {quest.requirement} CU today | You have: {todayCarbon} CU today</p>
-                <span className="badge">{completed ? "✅ Completed" : `🔒 Need ${Math.max(0, quest.requirement - todayCarbon)} CU`}</span>
-              </article>
-            );
-          })}
+          {data.quests?.length ? data.quests.map((quest) => (
+            <article className={`card quest-card ${quest.is_completed ? "unlocked" : "locked"}`} key={quest.id}>
+              <div className="card-icon">{quest.is_completed ? quest.icon : "🔒"}</div>
+              <h3>{quest.name}</h3>
+              <p>{quest.description}</p>
+              <p className="quest-reward">🎯 Reward: +{quest.reward} journey points</p>
+              <p className="quest-requires">💥 Requires: {quest.requirement_value} CU | You have: {totalCarbon} CU</p>
+              <span className="badge">{quest.is_completed ? "✅ Completed" : `🔒 Need ${Math.max(0, Number(quest.requirement_value) - totalCarbon)} CU`}</span>
+            </article>
+          )) : <EmptyState>{t("noActivities")}</EmptyState>}
         </div>
         <p className="progress-footnote">🧭 {t("progressFootnote")}</p>
       </div>
@@ -153,10 +128,10 @@ export default function Progress() {
             </div>
             {rankLog.length ? rankLog.map((item) => (
               <div className="rank-entry" key={item.id}>
-                <div className="rank-entry-icon">{Number(item.carbon_value) >= 0 ? "🌱" : "⚠️"}</div>
+                <div className="rank-entry-icon">{rankMeta[item.rank_name]?.icon || "🏅"}</div>
                 <div>
-                  <strong>{item.rank_after}</strong>
-                  <div className="rank-entry-date">{item.activity_name} · total {item.total_after} CU</div>
+                  <strong>{item.rank_name}</strong>
+                  <div className="rank-entry-date">{new Date(item.earned_at).toLocaleString()}</div>
                 </div>
               </div>
             )) : <EmptyState>No rank changes yet.</EmptyState>}

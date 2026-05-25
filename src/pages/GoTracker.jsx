@@ -1,13 +1,23 @@
 import { useEffect, useMemo, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { api, getErrorMessage } from "../api/client";
 import EmptyState from "../components/EmptyState.jsx";
 import StatCard from "../components/StatCard.jsx";
 import { useLanguage } from "../api/LanguageContext.jsx";
-import { withHomeFallback } from "../utils/activityFallbacks.js";
+import { useAuth } from "../api/AuthContext.jsx";
+import CarbonGuide from "../components/CarbonGuide.jsx";
+import {
+  hasLogForToday,
+  hasSeenTrackerGuide,
+  isDailySurveyCompletedLocally,
+  markTrackerGuideSeen
+} from "../utils/surveyStatus.js";
 
 const filters = ["all", "transportation", "home", "energy", "consumption", "waste", "environment"];
 
 export default function GoTracker() {
+  const navigate = useNavigate();
+  const { user } = useAuth();
   const { language, t } = useLanguage();
   const [activities, setActivities] = useState([]);
   const [logs, setLogs] = useState([]);
@@ -17,6 +27,32 @@ export default function GoTracker() {
   const [note, setNote] = useState("");
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
+  const [guideOpen, setGuideOpen] = useState(false);
+  const [gateChecking, setGateChecking] = useState(true);
+
+  async function checkTrackerGate() {
+    if (!user?.id) return;
+
+    if (!hasSeenTrackerGuide(user.id)) {
+      setGuideOpen(true);
+      setGateChecking(false);
+      return;
+    }
+
+    try {
+      const { data } = await api.get(`/activity-logs/me?lang=${language}`);
+      const completedToday = isDailySurveyCompletedLocally(user.id) || hasLogForToday(data.logs);
+      if (!completedToday) {
+        navigate("/survey", { replace: true });
+        return;
+      }
+    } catch {
+      navigate("/survey", { replace: true });
+      return;
+    }
+
+    setGateChecking(false);
+  }
 
   async function load() {
     setLoading(true);
@@ -25,7 +61,7 @@ export default function GoTracker() {
         api.get(`/activities?lang=${language}`),
         api.get(`/activity-logs/me?lang=${language}`)
       ]);
-      setActivities(withHomeFallback(activityRes.data.activities));
+      setActivities(activityRes.data.activities);
       setLogs(logRes.data.logs);
     } catch (err) {
       setError(getErrorMessage(err));
@@ -37,6 +73,17 @@ export default function GoTracker() {
   useEffect(() => {
     load();
   }, [language]);
+
+  useEffect(() => {
+    checkTrackerGate();
+  }, [user?.id, language]);
+
+  async function completeGuide() {
+    markTrackerGuideSeen(user.id);
+    setGuideOpen(false);
+    setGateChecking(true);
+    await checkTrackerGate();
+  }
 
   const selectedActivity = activities.find((item) => String(item.id) === String(activityId));
   const filteredActivities = filter === "all" ? activities : activities.filter((item) => item.category === filter);
@@ -70,10 +117,21 @@ export default function GoTracker() {
     }
   }
 
-  if (loading) return <div className="page-loader">Loading tracker...</div>;
+  if (loading || gateChecking) return (
+    <>
+      <CarbonGuide open={guideOpen} onComplete={completeGuide} />
+      <div className="page-loader">Loading tracker...</div>
+    </>
+  );
 
   return (
     <main className="tracker-page">
+      <CarbonGuide open={guideOpen} onComplete={completeGuide} />
+      {!guideOpen && (
+        <button className="guide-fab" type="button" onClick={() => setGuideOpen(true)} aria-label={t("openGuide")} title={t("openGuide")}>
+          📘
+        </button>
+      )}
       <section className="survey-container dashboard-container visible">
         <div className="dashboard-header">
           <h2>🧭 {t("trackerTitle")}</h2>

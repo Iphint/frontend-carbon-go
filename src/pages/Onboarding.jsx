@@ -41,11 +41,11 @@ export default function Onboarding() {
         <label>{t("address")}<textarea required value={form.address} onChange={(e) => setForm({ ...form, address: e.target.value })} /></label>
         <label>{t("gender")}
           <select required value={form.gender} onChange={(e) => setForm({ ...form, gender: e.target.value })}>
-            <option value="">Select gender</option>
-            <option value="female">Female</option>
-            <option value="male">Male</option>
-            <option value="other">Other</option>
-            <option value="prefer_not_to_say">Prefer not to say</option>
+            <option value="">{t("selectGender")}</option>
+            <option value="female">{t("female")}</option>
+            <option value="male">{t("male")}</option>
+            <option value="other">{t("otherGender")}</option>
+            <option value="prefer_not_to_say">{t("preferNotToSay")}</option>
           </select>
         </label>
         <label>{t("phone")}<input required value={form.phone_number} onChange={(e) => setForm({ ...form, phone_number: e.target.value })} /></label>
