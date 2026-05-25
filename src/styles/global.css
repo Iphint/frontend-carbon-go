@@ -375,6 +375,12 @@ button {
   margin: 1rem 0;
 }
 
+.other-activity-wrap {
+  border-top: 1px solid #e0ecd6;
+  padding-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
 .activity-card {
   width: 100%;
   text-align: left;

@@ -101,6 +101,8 @@ export default function GoTracker() {
                   <span className="activity-feedback">💬 {activity.feedback}</span>
                 </button>
               ))}
+            </div>
+            <div className="other-activity-wrap">
               <button type="button" className={`activity-card ${activityId === "other" ? "selected" : ""}`} onClick={() => setActivityId("other")}>
                 <span className="activity-name">{t("other")}</span>
                 <span className="activity-meta">custom · 0 CU</span>

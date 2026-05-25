@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
+import { api } from "../api/client";
 import { useLanguage } from "../api/LanguageContext.jsx";
 
 const scaleRows = [
@@ -18,19 +19,41 @@ const scaleRows = [
 
 export default function CarbonGuide() {
   const navigate = useNavigate();
+  const location = useLocation();
   const { language, t } = useLanguage();
   const [open, setOpen] = useState(false);
 
   useEffect(() => {
-    if (sessionStorage.getItem("carbon_show_guide") === "1") {
+    const shouldOpenFromUrl = new URLSearchParams(location.search).get("guide") === "1";
+    if (shouldOpenFromUrl || sessionStorage.getItem("carbon_show_guide") === "1") {
       setOpen(true);
       sessionStorage.removeItem("carbon_show_guide");
+      if (shouldOpenFromUrl) navigate("/tracker", { replace: true });
     }
-  }, []);
+  }, [location.search, navigate]);
 
-  function startTracking() {
+  function jakartaDay(value) {
+    return new Intl.DateTimeFormat("en-CA", {
+      timeZone: "Asia/Jakarta",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit"
+    }).format(new Date(value));
+  }
+
+  async function hasActivityToday() {
+    const today = jakartaDay(new Date());
+    const { data } = await api.get(`/activity-logs/me?lang=${language}`);
+    return data.logs.some((log) => jakartaDay(log.created_at) === today);
+  }
+
+  async function startTracking() {
     setOpen(false);
-    navigate("/survey");
+    try {
+      navigate(await hasActivityToday() ? "/tracker" : "/survey");
+    } catch {
+      navigate("/survey");
+    }
   }
 
   return (

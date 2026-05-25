@@ -19,7 +19,6 @@ export default function Login() {
     setLoading(true);
     try {
       const data = await auth.login(form);
-      if (data.onboardingComplete) sessionStorage.setItem("carbon_show_guide", "1");
       navigate(data.onboardingComplete ? "/" : "/onboarding", { replace: true });
     } catch (err) {
       setError(getErrorMessage(err));

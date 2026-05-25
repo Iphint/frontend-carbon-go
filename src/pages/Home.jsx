@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { useLanguage } from "../api/LanguageContext.jsx";
 
 const facts = [
@@ -15,7 +16,7 @@ export default function Home() {
         <div className="hero-content">
           <h1>🌱 {t("homeTitle")}</h1>
           <p>🌍 {t("homeSubtitle")}</p>
-          <a className="start-btn" href="/tracker">🌱 {t("startNow")} →</a>
+          <Link className="start-btn" to="/tracker?guide=1">🌱 {t("startNow")} →</Link>
         </div>
       </section>
 

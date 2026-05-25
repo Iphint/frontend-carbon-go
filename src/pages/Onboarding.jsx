@@ -26,7 +26,6 @@ export default function Onboarding() {
     try {
       await api.post("/profile/onboarding", form);
       await auth.refreshMe();
-      sessionStorage.setItem("carbon_show_guide", "1");
       navigate("/", { replace: true });
     } catch (err) {
       setError(getErrorMessage(err));

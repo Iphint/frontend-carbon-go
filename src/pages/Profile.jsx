@@ -129,7 +129,7 @@ export default function Profile() {
   ));
   const score = Number(data.stats.total_carbon);
   const memberDate = data.user.created_at ? new Date(data.user.created_at).toLocaleDateString("en-GB") : "20/5/2026";
-  const favoriteHabit = customActions[0]?.other_activity || logs.find((log) => Number(log.carbon_value) > 0)?.activity_name || "Reducing carbon footprint";
+  const favoriteHabit = customActions[0]?.other_activity || logs.find((log) => Number(log.carbon_value) > 0)?.activity_name || (language === "id" ? "Mengurangi jejak karbon" : "Reducing carbon footprint");
   const latestCustomText = customActions
     .map((action) => `${action.other_activity || ""} ${action.note || ""}`)
     .join(" ")
@@ -175,59 +175,95 @@ export default function Profile() {
         ? "Belum ada aksi hijau kustom yang dikirim."
         : "No custom green actions have been submitted yet."
   };
+  const profileCopy = {
+    profileTitle: language === "id" ? "Profil Eko Saya" : "My Eco Profile",
+    memberSince: language === "id" ? "Bergabung sejak" : "Member since",
+    faveHabit: language === "id" ? "Kebiasaan eko favorit" : "Fave eco-habit",
+    climateGoal: language === "id" ? "Target iklim: net-zero pada 2030" : "Climate goal: net-zero by 2030",
+    scoreTitle: language === "id" ? "Skor Karbon Saya" : "My Carbon Score",
+    totalCu: language === "id" ? "total Unit Karbon (CU)" : "total Carbon Units (CU)",
+    activitiesLogged: language === "id" ? "Aktivitas tercatat" : "Activities logged",
+    customTitle: language === "id" ? "Aksi Hijau Kustom · nol poin" : "Custom Green Actions · zero points",
+    customNote: language === "id"
+      ? "Ini adalah inisiatif pribadimu — tidak menambah poin, tetapi membantu memberi feedback."
+      : "These are your personal initiatives — they don't add points but they inspire feedback!",
+    noCustom: language === "id"
+      ? "Belum ada aktivitas kustom. Klik tombol di bawah untuk mengusulkan aksi hijau! (0 poin, tetap bermakna)"
+      : "No custom activities yet. Click below to suggest a green action! (0 points, all heart)",
+    personalGreenAction: language === "id" ? "Aksi hijau pribadi" : "Personal green action",
+    submitCustom: language === "id" ? "Kirim aktivitas kustom baru" : "Submit new custom activity",
+    delete: language === "id" ? "Hapus" : "Delete",
+    feedbackTitle: language === "id" ? "Feedback Eco-Sense" : "Eco-Sense Feedback",
+    footer: language === "id"
+      ? "Setiap aksi berarti — terus rawat jejak karbonmu dan inspirasi teman-temanmu!"
+      : "Every action counts — keep nurturing your footprint and inspiring friends!",
+    modalTitle: language === "id" ? "Kirim Aksi Hijau Kustom" : "Submit Custom Green Action",
+    nameGreenAction: language === "id" ? "Nama Aksi Hijau" : "Name Green Action",
+    description: language === "id" ? "Deskripsi" : "Description",
+    carbonNeutral: language === "id" ? "Nilai karbon: 0 CU / Netral" : "Carbon value: 0 CU / Neutral",
+    saveCustom: language === "id" ? "Simpan Aksi Kustom" : "Save Custom Action",
+    cancel: language === "id" ? "Batal" : "Cancel",
+    editProfile: language === "id" ? "Edit Profil" : "Edit Profile",
+    fullName: language === "id" ? "Nama asli" : "Full name",
+    address: language === "id" ? "Alamat" : "Address",
+    gender: language === "id" ? "Gender" : "Gender",
+    phone: language === "id" ? "No telp" : "Phone number",
+    bio: language === "id" ? "Bio" : "Bio",
+    saveChanges: language === "id" ? "Simpan Perubahan" : "Save Changes"
+  };
 
   return (
     <main className="profile-page">
       <div className="account-container profile-modern">
         <section className="profile-card eco-profile-card">
-          <div className="profile-section-title">🧑‍🚀 🌻 My Eco Profile</div>
+          <div className="profile-section-title">🧑‍🚀 🌻 {profileCopy.profileTitle}</div>
           <div className="profile-row">
             <div className="avatar-circle">{profile.photo ? <img src={profile.photo} alt="" /> : "🌱"}</div>
             <div className="info-fields">
               <h1>{profile.full_name || data.user.username}<button className="edit-btn" onClick={() => setEditing(true)}>✎ Edit</button></h1>
               <div className="info-badge">
-                <span>🗓 Member since {memberDate}</span>
+                <span>🗓 {profileCopy.memberSince} {memberDate}</span>
               </div>
               <div className="info-badge">
-                <span>🖤 Fave eco-habit: {favoriteHabit}</span>
-                <span>♻ Climate goal: net-zero by 2030</span>
+                <span>🖤 {profileCopy.faveHabit}: {favoriteHabit}</span>
+                <span>♻ {profileCopy.climateGoal}</span>
               </div>
             </div>
           </div>
         </section>
 
         <section className="profile-card">
-          <div className="profile-section-title">🏆 My Carbon Score</div>
+          <div className="profile-section-title">🏆 {profileCopy.scoreTitle}</div>
           <div className="score-wrapper profile-score-box">
             <div className="score-number">{score}</div>
-            <div className="score-label">♻ total Carbon Units (CU)</div>
+            <div className="score-label">♻ {profileCopy.totalCu}</div>
             <div className="score-pill">🏅 {rankName(score)}</div>
             <div className="profile-score-bar"><span style={{ width: `${Math.min(100, Math.max(0, score))}%` }} /></div>
-            <small>🧾 Activities logged: {data.stats.total_activities}</small>
+            <small>🧾 {profileCopy.activitiesLogged}: {data.stats.total_activities}</small>
           </div>
         </section>
 
         <section className="profile-card">
-          <div className="profile-section-title">👏 ✨ Custom Green Actions · zero points ✨</div>
-          <p className="profile-note">ⓘ These are your personal initiatives — they don't add points but they inspire feedback!</p>
+          <div className="profile-section-title">👏 ✨ {profileCopy.customTitle} ✨</div>
+          <p className="profile-note">ⓘ {profileCopy.customNote}</p>
           <div className="custom-action-list">
             {customActions.length ? customActions.map((item) => (
               <article className="custom-action-item" key={item.id}>
                 <div>
                   <strong>🌱 {item.other_activity}</strong>
-                  <span>{item.note || "Personal green action"}</span>
+                  <span>{item.note || profileCopy.personalGreenAction}</span>
                 </div>
-                <button type="button" className="delete-custom-btn" onClick={() => deleteCustomAction(item.id)}>Delete</button>
+                <button type="button" className="delete-custom-btn" onClick={() => deleteCustomAction(item.id)}>{profileCopy.delete}</button>
               </article>
             )) : (
-              <div className="custom-empty">🌱 🌈 No custom activities yet. Click below to suggest a green action! (0 points, all heart)</div>
+              <div className="custom-empty">🌱 🌈 {profileCopy.noCustom}</div>
             )}
           </div>
-          <button className="submit-custom-btn" onClick={() => setCustomOpen(true)}>⊕ Submit new custom activity</button>
+          <button className="submit-custom-btn" onClick={() => setCustomOpen(true)}>⊕ {profileCopy.submitCustom}</button>
         </section>
 
         <section className="profile-card feedback-card">
-          <div className="profile-section-title">🧠 🌿 Eco-Sense Feedback</div>
+          <div className="profile-section-title">🧠 🌿 {profileCopy.feedbackTitle}</div>
           <div className="feedback-panel">
             <h3>💬 {feedbackLabels.heading}</h3>
             <div className="feedback-insight">
@@ -248,18 +284,18 @@ export default function Profile() {
         <div className="logout-section profile-logout">
           <button className="logout-btn" onClick={logout}>↪ {t("logout")}</button>
         </div>
-        <p className="profile-footer">🌱 Every action counts — keep nurturing your footprint and inspiring friends! 🌍</p>
+        <p className="profile-footer">🌱 {profileCopy.footer} 🌍</p>
       </div>
 
       {customOpen && (
         <div className="modal-overlay">
           <form className="edit-modal" onSubmit={submitCustom}>
-            <h3>Submit Custom Green Action</h3>
-            <label>Name Green Action<input required value={customForm.name} onChange={(e) => setCustomForm({ ...customForm, name: e.target.value })} /></label>
-            <label>Description<textarea required value={customForm.description} onChange={(e) => setCustomForm({ ...customForm, description: e.target.value })} /></label>
-            <div className="neutral-badge">Carbon value: 0 CU / Neutral</div>
-            <button className="btn-primary">Save Custom Action</button>
-            <button type="button" className="btn-secondary" onClick={() => setCustomOpen(false)}>Cancel</button>
+            <h3>{profileCopy.modalTitle}</h3>
+            <label>{profileCopy.nameGreenAction}<input required value={customForm.name} onChange={(e) => setCustomForm({ ...customForm, name: e.target.value })} /></label>
+            <label>{profileCopy.description}<textarea required value={customForm.description} onChange={(e) => setCustomForm({ ...customForm, description: e.target.value })} /></label>
+            <div className="neutral-badge">{profileCopy.carbonNeutral}</div>
+            <button className="btn-primary">{profileCopy.saveCustom}</button>
+            <button type="button" className="btn-secondary" onClick={() => setCustomOpen(false)}>{profileCopy.cancel}</button>
           </form>
         </div>
       )}
@@ -267,14 +303,14 @@ export default function Profile() {
       {editing && (
         <div className="modal-overlay">
           <form className="edit-modal" onSubmit={save}>
-            <h3>Edit Profile</h3>
-            <label>Nama asli<input required value={form.full_name} onChange={(e) => setForm({ ...form, full_name: e.target.value })} /></label>
-            <label>Alamat<textarea required value={form.address} onChange={(e) => setForm({ ...form, address: e.target.value })} /></label>
-            <label>Gender<input required value={form.gender} onChange={(e) => setForm({ ...form, gender: e.target.value })} /></label>
-            <label>No telp<input required value={form.phone_number} onChange={(e) => setForm({ ...form, phone_number: e.target.value })} /></label>
-            <label>Bio<textarea value={form.bio} onChange={(e) => setForm({ ...form, bio: e.target.value })} /></label>
-            <button className="btn-primary">Save Changes</button>
-            <button type="button" className="btn-secondary" onClick={() => setEditing(false)}>Cancel</button>
+            <h3>{profileCopy.editProfile}</h3>
+            <label>{profileCopy.fullName}<input required value={form.full_name} onChange={(e) => setForm({ ...form, full_name: e.target.value })} /></label>
+            <label>{profileCopy.address}<textarea required value={form.address} onChange={(e) => setForm({ ...form, address: e.target.value })} /></label>
+            <label>{profileCopy.gender}<input required value={form.gender} onChange={(e) => setForm({ ...form, gender: e.target.value })} /></label>
+            <label>{profileCopy.phone}<input required value={form.phone_number} onChange={(e) => setForm({ ...form, phone_number: e.target.value })} /></label>
+            <label>{profileCopy.bio}<textarea value={form.bio} onChange={(e) => setForm({ ...form, bio: e.target.value })} /></label>
+            <button className="btn-primary">{profileCopy.saveChanges}</button>
+            <button type="button" className="btn-secondary" onClick={() => setEditing(false)}>{profileCopy.cancel}</button>
           </form>
         </div>
       )}
