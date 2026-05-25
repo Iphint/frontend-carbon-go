@@ -18,6 +18,13 @@ const rankTranslationKeys = {
   Hero: "heroRank"
 };
 
+const defaultQuestCatalog = [
+  { id: "first-green-step", icon: "🌱", name: "🌱 First Green Step", description: "Log your first eco-action", requirement_value: 50, reward: 25 },
+  { id: "energy-saver", icon: "💡", name: "💡 Energy Saver", description: "Save energy by turning off unused devices", requirement_value: 150, reward: 25 },
+  { id: "plastic-free", icon: "♻️", name: "♻️ Plastic Free", description: "Avoid single-use plastics consistently", requirement_value: 300, reward: 25 },
+  { id: "tree-guardian", icon: "🌳", name: "🌳 Tree Guardian", description: "Support reforestation efforts", requirement_value: 500, reward: 25 }
+];
+
 export default function Progress() {
   const { user } = useAuth();
   const { language, t } = useLanguage();
@@ -68,7 +75,8 @@ export default function Progress() {
     Math.min(completedBadges.length, nextRankTarget) +
     Math.min(completedMilestones.length, nextRankTarget)
   ) / (nextRankTarget * 3) * 100);
-  const activeQuests = (data.quests || []).slice(0, 4).map((quest) => {
+  const questSource = data.quests?.length ? data.quests : defaultQuestCatalog;
+  const activeQuests = questSource.slice(0, 4).map((quest) => {
     const requirement = Number(quest.requirement_value || 0);
     return {
       ...quest,

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Carbon-Go">
+  <rect width="64" height="64" rx="18" fill="#f7fff0"/>
+  <circle cx="32" cy="32" r="26" fill="#2f8a67"/>
+  <path d="M47 18c-14 1-25 8-28 19-2 8 3 14 11 13 11-2 18-15 17-32Z" fill="#b9df72"/>
+  <path d="M19 45c8-12 17-20 28-27" fill="none" stroke="#1a3e2c" stroke-width="4" stroke-linecap="round"/>
+  <path d="M20 47c6 4 16 5 25 0" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" opacity=".9"/>
+</svg>
