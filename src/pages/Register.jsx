@@ -1,6 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import AuthShell from "../components/AuthShell.jsx";
+import PasswordField from "../components/PasswordField.jsx";
 import { getErrorMessage } from "../api/client";
 import { useAuth } from "../api/AuthContext.jsx";
 import { useLanguage } from "../api/LanguageContext.jsx";
@@ -32,7 +33,7 @@ export default function Register() {
       <form className="form-stack" onSubmit={submit}>
         <label>{t("username")}<input required value={form.username} onChange={(e) => setForm({ ...form, username: e.target.value })} /></label>
         <label>{t("email")}<input required type="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} /></label>
-        <label>{t("password")}<input required type="password" minLength="8" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} /></label>
+        <PasswordField label={t("password")} minLength="8" value={form.password} onChange={(e) => setForm({ ...form, password: e.target.value })} />
         {error && <div className="form-error">{error}</div>}
         <button className="btn-primary" disabled={loading}>{loading ? `${t("register")}...` : t("register")}</button>
       </form>
