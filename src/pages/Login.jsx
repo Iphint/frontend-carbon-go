@@ -36,7 +36,7 @@ export default function Login() {
         {error && <div className="form-error">{error}</div>}
         <button className="btn-primary" disabled={loading}>{loading ? `${t("login")}...` : t("login")}</button>
       </form>
-      <p className="auth-switch">New here? <Link to="/register">Create an account</Link></p>
+      <p className="auth-switch">New here? <Link to="/register">Arifin</Link></p>
     </AuthShell>
   );
 }
