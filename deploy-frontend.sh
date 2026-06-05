@@ -1,4 +1,10 @@
-cd ~/green-web/frontend
+#!/usr/bin/env bash
+set -Eeuo pipefail
+
+APP_DIR="${APP_DIR:-$HOME/green-web/frontend}"
+WEB_DIR="${WEB_DIR:-/var/www/carbongo-frontend/dist}"
+
+cd "$APP_DIR"
 
 echo "Pull latest frontend..."
 git pull origin main
@@ -11,9 +17,9 @@ rm -rf dist
 npm run build
 
 echo "Copy build to Nginx frontend folder..."
-sudo mkdir -p /var/www/carbongo-frontend/dist
-sudo rm -rf /var/www/carbongo-frontend/dist/*
-sudo cp -r dist/* /var/www/carbongo-frontend/dist/
+sudo mkdir -p "$WEB_DIR"
+sudo rm -rf "$WEB_DIR"/*
+sudo cp -r dist/* "$WEB_DIR"/
 
 echo "Set permission..."
 sudo chown -R www-data:www-data /var/www/carbongo-frontend
