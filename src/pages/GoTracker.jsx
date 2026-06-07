@@ -15,6 +15,11 @@ import {
 
 const filters = ["all", "transportation", "energy", "consumption", "waste", "environment"];
 
+function categoryLabel(category, t) {
+  if (!category) return "";
+  return t(category);
+}
+
 export default function GoTracker() {
   const navigate = useNavigate();
   const { user } = useAuth();
@@ -155,7 +160,7 @@ export default function GoTracker() {
                   onClick={() => setActivityId(String(activity.id))}
                 >
                   <span className="activity-name">{activity.display_name || activity.name}</span>
-                  <span className="activity-meta">{activity.category} · {activity.carbon_value > 0 ? "+" : ""}{activity.carbon_value} CU</span>
+                  <span className="activity-meta">{categoryLabel(activity.category, t)} · {activity.carbon_value > 0 ? "+" : ""}{activity.carbon_value} CU</span>
                   <span className="activity-feedback">💬 {activity.feedback}</span>
                 </button>
               ))}
