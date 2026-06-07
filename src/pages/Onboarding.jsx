@@ -44,8 +44,6 @@ export default function Onboarding() {
             <option value="">{t("selectGender")}</option>
             <option value="female">{t("female")}</option>
             <option value="male">{t("male")}</option>
-            <option value="other">{t("otherGender")}</option>
-            <option value="prefer_not_to_say">{t("preferNotToSay")}</option>
           </select>
         </label>
         <label>{t("phone")}<input required value={form.phone_number} onChange={(e) => setForm({ ...form, phone_number: e.target.value })} /></label>

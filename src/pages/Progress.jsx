@@ -58,6 +58,7 @@ export default function Progress() {
   if (!data) return <div className="page-loader">Loading progress...</div>;
 
   const totalCarbon = Number(data.totalCarbon);
+  const journeyPoints = Number(data.journeyPoints || 0);
   const rank = { name: data.currentRank || "Guest", ...(rankMeta[data.currentRank] || rankMeta.Guest) };
   const completedBadges = data.badges.filter((badge) => Number(badge.is_completed) === 1);
   const completedMilestones = data.milestones.filter((milestone) => Number(milestone.is_completed) === 1);
@@ -123,8 +124,8 @@ export default function Progress() {
             <article className={`card ${item.is_completed ? "unlocked" : "locked"}`} key={item.id}>
               <div className="card-icon">{item.is_completed ? "✅" : "🌱"}</div>
               <h3>{item.name}</h3>
-              <p>{item.description.replace("Journey Points", "CU").replace("journey points", "CU")}</p>
-              <span className="badge">{item.is_completed ? "✅ UNLOCKED" : `🔒 Need ${Math.max(0, Number(item.target_value) - totalCarbon)} CU`}</span>
+              <p>{item.description.replace("CU", t("journeyPoints")).replace("Journey Points", t("journeyPoints")).replace("journey points", t("journeyPoints"))}</p>
+              <span className="badge">{item.is_completed ? `✅ ${t("unlocked")}` : `🔒 ${t("need")} ${Math.max(0, Number(item.target_value) - journeyPoints)} ${t("journeyPoints")}`}</span>
             </article>
           )) : <EmptyState>Empty achievements.</EmptyState>}
         </div>
@@ -136,7 +137,7 @@ export default function Progress() {
               <div className="card-icon">{badge.is_completed ? badge.icon : "🔒"}</div>
               <h3>{badge.name}</h3>
               <p>{badge.description.replace("Eco Points", "CU")}</p>
-              <span className="badge">{badge.is_completed ? "🏅 EARNED" : `⌛ Need ${Math.max(0, Number(badge.requirement_value) - totalCarbon)} CU`}</span>
+              <span className="badge">{badge.is_completed ? `🏅 ${t("earnedBadge")}` : `⌛ ${t("need")} ${Math.max(0, Number(badge.requirement_value) - totalCarbon)} CU`}</span>
             </article>
           )) : <EmptyState>{t("noBadges")}</EmptyState>}
         </div>
@@ -148,7 +149,7 @@ export default function Progress() {
               <div className="card-icon">{quest.isUnlocked ? quest.icon : "🔒"}</div>
               <h3>{quest.name}</h3>
               <p>{quest.description}</p>
-              <p className="quest-reward">🎯 {t("reward")}: +{quest.reward} journey points</p>
+              <p className="quest-reward">🎯 {t("reward")}: +{quest.reward} {t("journeyPoints")}</p>
               <p className="quest-requires">💥 {t("requires")}: {quest.requirement} CU | {t("youHave")}: {totalCarbon} CU</p>
               <span className="badge">{quest.isUnlocked ? `✅ ${t("completed")}` : `🔒 ${t("need")} ${quest.remaining} CU`}</span>
             </article>

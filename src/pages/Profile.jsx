@@ -213,9 +213,7 @@ export default function Profile() {
   };
   const genderOptions = [
     { value: "female", label: t("female") },
-    { value: "male", label: t("male") },
-    { value: "other", label: t("otherGender") },
-    { value: "prefer_not_to_say", label: t("preferNotToSay") }
+    { value: "male", label: t("male") }
   ];
   const knownGender = genderOptions.some((option) => option.value === form?.gender);
 
@@ -314,9 +312,8 @@ export default function Profile() {
             <label>{profileCopy.fullName}<input required value={form.full_name} onChange={(e) => setForm({ ...form, full_name: e.target.value })} /></label>
             <label>{profileCopy.address}<textarea required value={form.address} onChange={(e) => setForm({ ...form, address: e.target.value })} /></label>
             <label>{profileCopy.gender}
-              <select required value={form.gender} onChange={(e) => setForm({ ...form, gender: e.target.value })}>
+              <select required value={knownGender ? form.gender : ""} onChange={(e) => setForm({ ...form, gender: e.target.value })}>
                 <option value="">{t("selectGender")}</option>
-                {!knownGender && form.gender && <option value={form.gender}>{form.gender}</option>}
                 {genderOptions.map((option) => (
                   <option key={option.value} value={option.value}>{option.label}</option>
                 ))}
