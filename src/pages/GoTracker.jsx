@@ -13,7 +13,7 @@ import {
   markTrackerGuideSeen
 } from "../utils/surveyStatus.js";
 
-const filters = ["all", "transportation", "home", "energy", "consumption", "waste", "environment"];
+const filters = ["all", "transportation", "energy", "consumption", "waste", "environment"];
 
 export default function GoTracker() {
   const navigate = useNavigate();
@@ -142,7 +142,7 @@ export default function GoTracker() {
             <div className="filter-chips">
               {filters.map((item) => (
                 <button type="button" key={item} className={`filter-chip ${filter === item ? "active" : ""}`} onClick={() => setFilter(item)}>
-                  {item === "all" ? t("all") : item === "home" ? t("homeCategory") : t(item)}
+                  {item === "all" ? t("all") : t(item)}
                 </button>
               ))}
             </div>

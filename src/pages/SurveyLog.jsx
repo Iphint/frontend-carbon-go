@@ -5,10 +5,11 @@ import EmptyState from "../components/EmptyState.jsx";
 import { useLanguage } from "../api/LanguageContext.jsx";
 import { useAuth } from "../api/AuthContext.jsx";
 import { markDailySurveyCompleted } from "../utils/surveyStatus.js";
+import CarbonGuide from "../components/CarbonGuide.jsx";
 
 const categorySteps = [
   { id: "transportation", labelKey: "school", titleKey: "schoolTransportation", single: true },
-  { id: "home", labelKey: "homeCategory", titleKey: "homeActivity", single: true },
+  { id: "home_transportation", sourceCategory: "transportation", labelKey: "homeCategory", titleKey: "homeTransportation", single: true },
   { id: "energy", labelKey: "energy", titleKey: "energyActivity", single: false },
   { id: "consumption", labelKey: "consumption", titleKey: "consumptionActivity", single: false },
   { id: "waste", labelKey: "waste", titleKey: "wasteActivity", single: false },
@@ -31,6 +32,7 @@ export default function SurveyLog() {
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
   const [saving, setSaving] = useState(false);
+  const [guideOpen, setGuideOpen] = useState(false);
 
   useEffect(() => {
     setLoading(true);
@@ -42,7 +44,7 @@ export default function SurveyLog() {
 
   const currentStep = categorySteps[stepIndex];
   const currentSelections = selected[currentStep.id] || [];
-  const currentActivities = activities.filter((item) => item.category === currentStep.id);
+  const currentActivities = activities.filter((item) => item.category === (currentStep.sourceCategory || currentStep.id));
   const currentHasOther = currentSelections.includes(otherKey(currentStep.id));
   const selectedCount = Object.values(selected).reduce((sum, items) => sum + items.length, 0);
 
@@ -108,6 +110,12 @@ export default function SurveyLog() {
 
   return (
     <main className="tracker-page">
+      <CarbonGuide open={guideOpen} onComplete={() => setGuideOpen(false)} />
+      {!guideOpen && (
+        <button className="guide-fab" type="button" onClick={() => setGuideOpen(true)} aria-label={t("openGuide")} title={t("openGuide")}>
+          📘
+        </button>
+      )}
       <section className="survey-shell">
         <header className="survey-topbar">
           <div>
