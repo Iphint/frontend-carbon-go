@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { api, getErrorMessage } from "../api/client";
 import EmptyState from "../components/EmptyState.jsx";
@@ -92,7 +92,6 @@ export default function GoTracker() {
 
   const selectedActivity = activities.find((item) => String(item.id) === String(activityId));
   const filteredActivities = filter === "all" ? activities : activities.filter((item) => item.category === filter);
-  const total = useMemo(() => logs.reduce((sum, log) => sum + Number(log.carbon_value), 0), [logs]);
   const good = logs.filter((log) => Number(log.carbon_value) > 0).length;
   const bad = logs.filter((log) => Number(log.carbon_value) < 0).length;
 
@@ -160,7 +159,7 @@ export default function GoTracker() {
                   onClick={() => setActivityId(String(activity.id))}
                 >
                   <span className="activity-name">{activity.display_name || activity.name}</span>
-                  <span className="activity-meta">{categoryLabel(activity.category, t)} · {activity.carbon_value > 0 ? "+" : ""}{activity.carbon_value} CU</span>
+                  <span className="activity-meta">{categoryLabel(activity.category, t)}</span>
                   <span className="activity-feedback">💬 {activity.feedback}</span>
                 </button>
               ))}
@@ -168,22 +167,17 @@ export default function GoTracker() {
             <div className="other-activity-wrap">
               <button type="button" className={`activity-card ${activityId === "other" ? "selected" : ""}`} onClick={() => setActivityId("other")}>
                 <span className="activity-name">{t("other")}</span>
-                <span className="activity-meta">custom · 0 CU</span>
+                <span className="activity-meta">{t("custom")}</span>
               </button>
             </div>
             {activityId === "other" && <input className="inline-input" required={!note.trim()} placeholder={t("manualActivity")} value={other} onChange={(e) => setOther(e.target.value)} />}
             <textarea className="inline-input" placeholder={t("noteOptional")} value={note} onChange={(e) => setNote(e.target.value)} />
-            <div id="dashPreview">{selectedActivity ? `${selectedActivity.display_name || selectedActivity.name} (${selectedActivity.carbon_value} CU) · ${selectedActivity.feedback}` : activityId === "other" ? `${t("other")} · ${t("neutral")} 0 CU` : t("noSelected")}</div>
+            <div id="dashPreview">{selectedActivity ? `${selectedActivity.display_name || selectedActivity.name} · ${selectedActivity.feedback}` : activityId === "other" ? `${t("other")} · ${t("neutral")}` : t("noSelected")}</div>
             {error && <div className="form-error">{error}</div>}
             <button className="log-btn" disabled={!activityId && !note.trim()}>➕ {t("logSelected")}</button>
           </form>
 
           <div className="stats-panel">
-            <div className="accumulator-card">
-              <div>{t("totalCu")}</div>
-              <div className="accumulator-score">{total >= 0 ? "+" : ""}{total}</div>
-              <div className="neutral-badge">{total > 0 ? t("positive") : total < 0 ? t("negative") : t("neutral")}</div>
-            </div>
             <div className="stats-grid">
               <StatCard label={t("totalActivities")} value={logs.length} />
               <StatCard label={t("goodActions")} value={good} />
@@ -195,7 +189,6 @@ export default function GoTracker() {
               {logs.length ? logs.slice(0, 8).map((log) => (
                 <div className="log-entry" key={log.id}>
                   <strong>{log.activity_name || log.other_activity || "Other"}</strong>
-                  <span>{Number(log.carbon_value) > 0 ? "+" : ""}{log.carbon_value} CU</span>
                   <small className="feedback-solution">💬 {log.feedback || (Number(log.carbon_value) === 0 ? t("neutral") : "")}</small>
                   {log.note && <small className="log-note">📝 {log.note}</small>}
                 </div>

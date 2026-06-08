@@ -157,7 +157,6 @@ export default function SurveyLog() {
                   onClick={() => toggleActivity(activity.id)}
                 >
                   <span>{activity.display_name || activity.name}</span>
-                  <strong>{Number(activity.carbon_value) > 0 ? "+" : ""}{activity.carbon_value} CU</strong>
                 </button>
               );
             }) : <EmptyState>{t("noActivities")}</EmptyState>}
@@ -168,7 +167,6 @@ export default function SurveyLog() {
               onClick={() => toggleActivity(otherKey(currentStep.id))}
             >
               <span>{t("otherSurvey")}</span>
-              <strong>{t("noCu")}</strong>
             </button>
           </div>
 
