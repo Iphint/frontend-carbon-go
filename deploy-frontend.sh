@@ -6,6 +6,9 @@ WEB_DIR="${WEB_DIR:-/var/www/carbongo-frontend/dist}"
 
 cd "$APP_DIR"
 
+echo "Stash local changes..."
+git stash --include-untracked
+
 echo "Pull latest frontend..."
 git pull origin main
 
