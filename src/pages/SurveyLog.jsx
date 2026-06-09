@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+import Swal from "sweetalert2";
 import { api, getErrorMessage } from "../api/client";
 import EmptyState from "../components/EmptyState.jsx";
 import { useLanguage } from "../api/LanguageContext.jsx";
@@ -48,6 +49,26 @@ export default function SurveyLog() {
   const currentHasOther = currentSelections.includes(otherKey(currentStep.id));
   const selectedCount = Object.values(selected).reduce((sum, items) => sum + items.length, 0);
 
+  function isStepValid(step) {
+    const values = selected[step.id] || [];
+    if (!values.length) return false;
+    if (values.includes(otherKey(step.id)) && !otherInputs[step.id]?.trim()) return false;
+    return true;
+  }
+
+  function validateStep(step = currentStep) {
+    if (!isStepValid(step)) {
+      setError(t("surveySelectCurrent"));
+      return false;
+    }
+    setError("");
+    return true;
+  }
+
+  function canOpenStep(index) {
+    return categorySteps.slice(0, index).every((step) => isStepValid(step));
+  }
+
   function toggleActivity(activityId) {
     setError("");
     setSelected((prev) => {
@@ -63,6 +84,7 @@ export default function SurveyLog() {
   }
 
   function goNext() {
+    if (!validateStep()) return;
     if (stepIndex < categorySteps.length - 1) setStepIndex((index) => index + 1);
   }
 
@@ -73,6 +95,23 @@ export default function SurveyLog() {
   async function submit(e) {
     e.preventDefault();
     setError("");
+    const invalidStepIndex = categorySteps.findIndex((step) => !isStepValid(step));
+    if (invalidStepIndex >= 0) {
+      setStepIndex(invalidStepIndex);
+      setError(t("surveySelectCurrent"));
+      return;
+    }
+    const result = await Swal.fire({
+      title: t("confirmSubmitSurvey"),
+      icon: "question",
+      showCancelButton: true,
+      confirmButtonText: t("submitSurvey"),
+      cancelButtonText: t("cancel"),
+      confirmButtonColor: "#1a7f5a",
+      cancelButtonColor: "#94a3b8"
+    });
+    if (!result.isConfirmed) return;
+
     const manualActivity = note.trim();
 
     const payloads = Object.entries(selected).flatMap(([category, values]) => (
@@ -130,7 +169,14 @@ export default function SurveyLog() {
               type="button"
               key={step.id}
               className={`survey-tab ${index === stepIndex ? "active" : ""}`}
-              onClick={() => setStepIndex(index)}
+              onClick={() => {
+                if (index <= stepIndex || canOpenStep(index)) {
+                  setError("");
+                  setStepIndex(index);
+                } else {
+                  setError(t("surveySelectCurrent"));
+                }
+              }}
             >
               {t(step.labelKey)}
             </button>
