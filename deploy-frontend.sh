@@ -6,11 +6,10 @@ WEB_DIR="${WEB_DIR:-/var/www/carbongo-frontend/dist}"
 
 cd "$APP_DIR"
 
-echo "Stash local changes..."
-git stash --include-untracked
-
-echo "Pull latest frontend..."
-git pull origin main
+echo "Reset local changes..."
+git fetch origin main
+git reset --hard origin/main
+git clean -fd
 
 echo "Install dependencies..."
 npm install
