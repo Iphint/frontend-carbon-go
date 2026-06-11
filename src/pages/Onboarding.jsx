@@ -22,6 +22,10 @@ export default function Onboarding() {
   async function submit(e) {
     e.preventDefault();
     setError("");
+    if (!/^\d+$/.test(form.phone_number.trim())) {
+      setError(t("phoneNumberDigitsOnly"));
+      return;
+    }
     setLoading(true);
     try {
       await api.post("/profile/onboarding", form);
@@ -46,7 +50,7 @@ export default function Onboarding() {
             <option value="male">{t("male")}</option>
           </select>
         </label>
-        <label>{t("phone")}<input required value={form.phone_number} onChange={(e) => setForm({ ...form, phone_number: e.target.value })} /></label>
+        <label>{t("phone")}<input required inputMode="numeric" pattern="[0-9]*" value={form.phone_number} onChange={(e) => setForm({ ...form, phone_number: e.target.value.replace(/\D/g, "") })} /></label>
         <label>{t("bio")}<textarea value={form.bio} onChange={(e) => setForm({ ...form, bio: e.target.value })} /></label>
         {error && <div className="form-error">{error}</div>}
         <button className="btn-primary" disabled={loading}>{loading ? "..." : t("finishOnboarding")}</button>

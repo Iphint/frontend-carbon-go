@@ -62,6 +62,10 @@ export default function Profile() {
   async function save(e) {
     e.preventDefault();
     setError("");
+    if (!/^\d+$/.test(form.phone_number.trim())) {
+      setError(t("phoneNumberDigitsOnly"));
+      return;
+    }
     try {
       await api.put("/profile/me", form);
       setEditing(false);
@@ -319,7 +323,7 @@ export default function Profile() {
                 ))}
               </select>
             </label>
-            <label>{profileCopy.phone}<input required value={form.phone_number} onChange={(e) => setForm({ ...form, phone_number: e.target.value })} /></label>
+            <label>{profileCopy.phone}<input required inputMode="numeric" pattern="[0-9]*" value={form.phone_number} onChange={(e) => setForm({ ...form, phone_number: e.target.value.replace(/\D/g, "") })} /></label>
             <label>{profileCopy.bio}<textarea value={form.bio} onChange={(e) => setForm({ ...form, bio: e.target.value })} /></label>
             <button className="btn-primary">{profileCopy.saveChanges}</button>
             <button type="button" className="btn-secondary" onClick={() => setEditing(false)}>{profileCopy.cancel}</button>

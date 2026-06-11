@@ -7,7 +7,6 @@ import { useLanguage } from "../api/LanguageContext.jsx";
 import { useAuth } from "../api/AuthContext.jsx";
 import CarbonGuide from "../components/CarbonGuide.jsx";
 import {
-  hasLogForToday,
   hasSeenTrackerGuide,
   isDailySurveyCompletedLocally,
   markTrackerGuideSeen
@@ -45,14 +44,18 @@ export default function GoTracker() {
     }
 
     try {
-      const { data } = await api.get(`/activity-logs/me?lang=${language}`);
-      const completedToday = isDailySurveyCompletedLocally(user.id) || hasLogForToday(data.logs);
+      const { data } = await api.get("/daily-survey/status");
+      const completedToday = Boolean(data.completed) || isDailySurveyCompletedLocally(user.id);
       if (!completedToday) {
         navigate("/survey", { replace: true });
         return;
       }
     } catch {
-      navigate("/survey", { replace: true });
+      if (!isDailySurveyCompletedLocally(user.id)) {
+        navigate("/survey", { replace: true });
+        return;
+      }
+      setGateChecking(false);
       return;
     }
 

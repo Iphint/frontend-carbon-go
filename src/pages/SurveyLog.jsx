@@ -135,7 +135,10 @@ export default function SurveyLog() {
 
     setSaving(true);
     try {
-      await Promise.all(payloads.map((payload) => api.post("/activity-logs", payload)));
+      await Promise.all(payloads.map((payload, index) => api.post("/activity-logs", {
+        ...payload,
+        complete_daily_survey: index === 0
+      })));
       markDailySurveyCompleted(user.id);
       navigate("/tracker", { replace: true });
     } catch (err) {
