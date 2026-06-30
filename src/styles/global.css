@@ -1663,6 +1663,60 @@ textarea {
   font-weight: 800;
 }
 
+.forgot-password-link {
+  display: block;
+  margin-top: 0.35rem;
+  background: none;
+  border: none;
+  color: #2e7d5e;
+  font-weight: 700;
+  font-size: 0.82rem;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.forgot-password-link:hover {
+  color: #1e4f3a;
+}
+
+.forgot-modal {
+  position: relative;
+  max-width: 420px;
+}
+
+.forgot-modal h3 {
+  color: #2c6537;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.forgot-desc {
+  font-size: 0.85rem;
+  margin-bottom: 1rem;
+}
+
+.forgot-success {
+  background: #e0f4df;
+  color: #1d6535;
+  border-radius: 1rem;
+  padding: 0.75rem 1rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+}
+
+.modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  line-height: 1;
+}
+
 .empty-state {
   background: #fff3e0;
   border-radius: 2rem;
